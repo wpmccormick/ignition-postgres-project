@@ -1,4 +1,4 @@
-# Ignition / Postgres Project Template
+# software-training
 
 ___
 
