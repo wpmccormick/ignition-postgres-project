@@ -165,8 +165,13 @@ pre-commit install -c linting/.pre-commit-config.yaml
 
 # Verify the user has the linting dependencies installed
 if ! command -v markdownlint &> /dev/null; then
-	printf '\n Markdownlint not found, please install... \n'
-	exit 1
+	if ! command -v mdl &> /dev/null; then
+		printf '\n no mark down linter found (markdownlint and mdl); please install... \n'
+		exit 1
+	fi
+	alias markdownlint='mdl'
+	echo "alias markdownlint='mdl'" >> ~/.bashrc
+	printf '\n using mdl for markdownlint!\n'
 fi
 
 if ! command -v shellcheck &> /dev/null; then
