@@ -1,69 +1,69 @@
 ---
 services:
-  io_gateway:
+  io-gateway:
     image: bwdesigngroup/ignition-docker-iiot:8.1.36
-    hostname: io_gateway
+    hostname: io-gateway
     volumes:
-      - ./ignition-data/io_gateway:/workdir
-      - ./backups/io_gateway.gwbk:/restore.gwbk
+      - ./ignition-data/io-gateway:/workdir
+      - ./backups/io-gateway.gwbk:/restore.gwbk
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false
-      GATEWAY_SYSTEM_NAME: io_gateway
+      GATEWAY_SYSTEM_NAME: io-gateway
       GATEWAY_PUBLIC_HTTPS_PORT: 443
-      GATEWAY_PUBLIC_ADDRESS: io_gateway.localtest.me
-      GATEWAY_MODULES_ENABLED: allen-bradley-drivers,bacnet-driver,opc-ua
+      GATEWAY_PUBLIC_ADDRESS: io-gateway.localtest.me
+      GATEWAY_MODULES_ENABLED: opc-ua
       IIOT_MODULES_ENABLED: mqtt-transmission
     labels:
       traefik.enable: "true"
-      traefik.hostname: "io_gateway"
+      traefik.hostname: "io-gateway"
     command: >
       -r /restore.gwbk
     networks:
       - default
       - proxy
 
-  mqtt_broker:
+  mqtt-broker:
     image: bwdesigngroup/ignition-docker-iiot:8.1.36
-    hostname: mqtt_broker
+    hostname: mqtt-broker
     volumes:
-      - ./ignition-data:/workdir
-      - ./backups/mqtt_broker.gwbk:/restore.gwbk
+      - ./ignition-data/mqtt-broker:/workdir
+      - ./backups/mqtt-broker.gwbk:/restore.gwbk
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false
-      GATEWAY_SYSTEM_NAME: mqtt_broker
+      GATEWAY_SYSTEM_NAME: mqtt-broker
       GATEWAY_PUBLIC_HTTPS_PORT: 443
-      GATEWAY_PUBLIC_ADDRESS: mqtt_broker.localtest.me
+      GATEWAY_PUBLIC_ADDRESS: mqtt-broker.localtest.me
       GATEWAY_MODULES_ENABLED: opc-ua
       IIOT_MODULES_ENABLED: mqtt-distributor
     labels:
       traefik.enable: "true"
-      traefik.hostname: "mqtt_broker"
+      traefik.hostname: "mqtt-broker"
     command: >
       -r /restore.gwbk
     networks:
       - default
       - proxy
 
-  oee_backend:
+  oee-backend:
     image: bwdesigngroup/ignition-docker-iiot:8.1.36
-    hostname: oee_backend
+    hostname: oee-backend
     volumes:
-      - ./ignition-data:/workdir
-      - ./backups/oee_backend.gwbk:/restore.gwbk
+      - ./ignition-data/oee-backend:/workdir
+      - ./backups/oee-backend.gwbk:/restore.gwbk
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false
-      GATEWAY_SYSTEM_NAME: oee_backend
+      GATEWAY_SYSTEM_NAME: oee-backend
       GATEWAY_PUBLIC_HTTPS_PORT: 443
-      GATEWAY_PUBLIC_ADDRESS: oee_backend.localtest.me
-      GATEWAY_MODULES_ENABLED: opc-ua,tag-historian,sql-bridge
+      GATEWAY_PUBLIC_ADDRESS: oee-backend.localtest.me
+      GATEWAY_MODULES_ENABLED: opc-ua
       MES_MODULES_ENABLED: oee_downtime
       IIOT_MODULES_ENABLED: mqtt-engine
     labels:
       traefik.enable: "true"
-      traefik.hostname: "oee_backend"
+      traefik.hostname: "oee-backend"
     command: >
       -r /restore.gwbk
     networks:
@@ -74,7 +74,7 @@ services:
     image: bwdesigngroup/ignition-docker:8.1.36
     hostname: frontend
     volumes:
-      - ./ignition-data:/workdir
+      - ./ignition-data/frontend:/workdir
       - ./backups/frontend.gwbk:/restore.gwbk
     environment:
       SYMLINK_GITIGNORE: false
