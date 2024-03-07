@@ -12,7 +12,7 @@ services:
       GATEWAY_SYSTEM_NAME: io-gateway
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: io-gateway.localtest.me
-      GATEWAY_MODULES_ENABLED: opc-ua
+      GATEWAY_MODULES_ENABLED: opc-ua, perspective
       IIOT_MODULES_ENABLED: mqtt-transmission
     labels:
       traefik.enable: "true"
@@ -35,7 +35,7 @@ services:
       GATEWAY_SYSTEM_NAME: mqtt-broker
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: mqtt-broker.localtest.me
-      GATEWAY_MODULES_ENABLED: opc-ua
+      GATEWAY_MODULES_ENABLED: perspective
       IIOT_MODULES_ENABLED: mqtt-distributor
     labels:
       traefik.enable: "true"
@@ -58,7 +58,7 @@ services:
       GATEWAY_SYSTEM_NAME: oee-backend
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: oee-backend.localtest.me
-      GATEWAY_MODULES_ENABLED: opc-ua
+      GATEWAY_MODULES_ENABLED: perspective
       MES_MODULES_ENABLED: oee_downtime
       IIOT_MODULES_ENABLED: mqtt-engine
     labels:
