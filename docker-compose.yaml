@@ -47,11 +47,12 @@ services:
       - proxy
 
   oee-backend:
-    image: bwdesigngroup/ignition-docker-iiot:8.1.36
+    image: bwdesigngroup/ignition-docker:8.1.33
     hostname: oee-backend
     volumes:
       - ./ignition-data/oee-backend:/workdir
       - ./backups/oee-backend.gwbk:/restore.gwbk
+      - ./modules/oee-backend:/modules
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false
@@ -59,13 +60,11 @@ services:
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: oee-backend.localtest.me
       GATEWAY_MODULES_ENABLED: perspective
-      MES_MODULES_ENABLED: oee_downtime
-      IIOT_MODULES_ENABLED: mqtt-engine
     labels:
       traefik.enable: "true"
       traefik.hostname: "oee-backend"
-    command: >
-      -r /restore.gwbk
+    # command: >
+    #   -r /restore.gwbk
     networks:
       - default
       - proxy
