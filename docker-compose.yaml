@@ -12,7 +12,7 @@ services:
       GATEWAY_SYSTEM_NAME: io-gateway
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: io-gateway.localtest.me
-      GATEWAY_MODULES_ENABLED: opc-ua, perspective
+      GATEWAY_MODULES_ENABLED: opc-ua,perspective
       IIOT_MODULES_ENABLED: mqtt-transmission
     labels:
       traefik.enable: "true"
