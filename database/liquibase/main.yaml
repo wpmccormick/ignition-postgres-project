@@ -5,8 +5,7 @@ databaseChangeLog:
   - preConditions:  
     - runningAs:  
         username:  liquibase 
-
-  # - include:
-  #     file: tables/Example.sql
-  # - include:
-  #     file: simulated-data/insert-values.sql
+  - include:
+      file: tables/Example.sql
+  - include:
+      file: simulated-data/insert-values.sql

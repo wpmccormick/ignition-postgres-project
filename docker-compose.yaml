@@ -1,20 +1,91 @@
 ---
 services:
-  gateway:
-    image: bwdesigngroup/ignition-docker:8.1.32
-    hostname: software-training
+  io-gateway:
+    image: bwdesigngroup/ignition-docker-iiot:8.1.36
+    hostname: io-gateway
     volumes:
-      - ./ignition-data:/workdir
-      - ./backups/gateway.gwbk:/restore.gwbk
+      - ./ignition-data/io-gateway:/workdir
+      - ./backups/io-gateway.gwbk:/restore.gwbk
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false
-      GATEWAY_SYSTEM_NAME: software-training
+      GATEWAY_SYSTEM_NAME: io-gateway
       GATEWAY_PUBLIC_HTTPS_PORT: 443
-      GATEWAY_PUBLIC_ADDRESS: software-training.localtest.me
+      GATEWAY_PUBLIC_ADDRESS: io-gateway.localtest.me
+      GATEWAY_MODULES_ENABLED: opc-ua, perspective
+      IIOT_MODULES_ENABLED: mqtt-transmission
     labels:
       traefik.enable: "true"
-      traefik.hostname: "software-training"
+      traefik.hostname: "io-gateway"
+    command: >
+      -r /restore.gwbk
+    networks:
+      - default
+      - proxy
+
+  mqtt-broker:
+    image: bwdesigngroup/ignition-docker-iiot:8.1.36
+    hostname: mqtt-broker
+    volumes:
+      - ./ignition-data/mqtt-broker:/workdir
+      - ./backups/mqtt-broker.gwbk:/restore.gwbk
+    environment:
+      SYMLINK_GITIGNORE: false
+      SYMLINK_LOGBACK: false
+      GATEWAY_SYSTEM_NAME: mqtt-broker
+      GATEWAY_PUBLIC_HTTPS_PORT: 443
+      GATEWAY_PUBLIC_ADDRESS: mqtt-broker.localtest.me
+      GATEWAY_MODULES_ENABLED: perspective
+      IIOT_MODULES_ENABLED: mqtt-distributor
+    labels:
+      traefik.enable: "true"
+      traefik.hostname: "mqtt-broker"
+    command: >
+      -r /restore.gwbk
+    networks:
+      - default
+      - proxy
+
+  oee-backend:
+    image: bwdesigngroup/ignition-docker-iiot:8.1.36
+    hostname: oee-backend
+    volumes:
+      - ./ignition-data/oee-backend:/workdir
+      - ./backups/oee-backend.gwbk:/restore.gwbk
+    environment:
+      SYMLINK_GITIGNORE: false
+      SYMLINK_LOGBACK: false
+      GATEWAY_SYSTEM_NAME: oee-backend
+      GATEWAY_PUBLIC_HTTPS_PORT: 443
+      GATEWAY_PUBLIC_ADDRESS: oee-backend.localtest.me
+      GATEWAY_MODULES_ENABLED: perspective
+      MES_MODULES_ENABLED: oee_downtime
+      IIOT_MODULES_ENABLED: mqtt-engine
+    labels:
+      traefik.enable: "true"
+      traefik.hostname: "oee-backend"
+    command: >
+      -r /restore.gwbk
+    networks:
+      - default
+      - proxy
+
+  frontend:
+    image: bwdesigngroup/ignition-docker:8.1.36
+    hostname: frontend
+    volumes:
+      - ./ignition-data/frontend:/workdir
+      - ./backups/frontend.gwbk:/restore.gwbk
+    environment:
+      SYMLINK_GITIGNORE: false
+      SYMLINK_LOGBACK: false
+      GATEWAY_SYSTEM_NAME: frontend
+      GATEWAY_PUBLIC_HTTPS_PORT: 443
+      GATEWAY_PUBLIC_ADDRESS: frontend.localtest.me
+      GATEWAY_MODULES_ENABLED: perspective
+    labels:
+      traefik.enable: "true"
+      traefik.hostname: "frontend"
     command: >
       -r /restore.gwbk
     networks:
@@ -39,18 +110,18 @@ services:
       - ./scripts/wait-for-it.sh:/wait-for-it.sh
     entrypoint: ["/wait-for-it.sh", "postgres:5432", "--", "liquibase", "--defaultsFile=/database/liquibase/liquibase.docker.properties", "update"]
   
-#   # Uncomment the following lines to enable pgAdmin for database management
-#   pgadmin:
-#     image: dpage/pgadmin4
-#     environment:
-#       PGADMIN_DEFAULT_EMAIL: admin@admin.com
-#       PGADMIN_DEFAULT_PASSWORD: root
-#     labels:
-#       traefik.enable: "true"
-#       traefik.hostname: "software-training-pgadmin"
-#     networks:
-#       - default
-#       - proxy
+  # Uncomment the following lines to enable pgAdmin for database management
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    labels:
+      traefik.enable: "true"
+      traefik.hostname: "pgadmin"
+    networks:
+      - default
+      - proxy
 
 networks:
   default:
