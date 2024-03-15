@@ -1,7 +1,7 @@
 ---
 services:
   io-gateway:
-    image: bwdesigngroup/ignition-docker-iiot:8.1.36
+    image: bwdesigngroup/ignition-docker-iiot:8.1.33
     hostname: io-gateway
     volumes:
       - ./ignition-data/io-gateway:/workdir
@@ -24,7 +24,7 @@ services:
       - proxy
 
   mqtt-broker:
-    image: bwdesigngroup/ignition-docker-iiot:8.1.36
+    image: bwdesigngroup/ignition-docker-iiot:8.1.33
     hostname: mqtt-broker
     volumes:
       - ./ignition-data/mqtt-broker:/workdir
@@ -70,7 +70,7 @@ services:
       - proxy
 
   frontend:
-    image: bwdesigngroup/ignition-docker:8.1.36
+    image: bwdesigngroup/ignition-docker:8.1.33
     hostname: frontend
     volumes:
       - ./ignition-data/frontend:/workdir

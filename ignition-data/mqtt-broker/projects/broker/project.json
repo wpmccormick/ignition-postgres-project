@@ -1,0 +1,6 @@
+{
+  "title": "MQTT Broker",
+  "description": "",
+  "enabled": true,
+  "inheritable": false
+}
