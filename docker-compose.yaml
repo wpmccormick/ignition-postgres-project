@@ -63,8 +63,8 @@ services:
     labels:
       traefik.enable: "true"
       traefik.hostname: "oee-backend"
-    # command: >
-    #   -r /restore.gwbk
+    command: >
+      -r /restore.gwbk
     networks:
       - default
       - proxy
@@ -75,6 +75,7 @@ services:
     volumes:
       - ./ignition-data/frontend:/workdir
       - ./backups/frontend.gwbk:/restore.gwbk
+      - ./modules/frontend:/modules
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false
