@@ -63,8 +63,8 @@ services:
     labels:
       traefik.enable: "true"
       traefik.hostname: "oee-backend"
-    command: >
-      -r /restore.gwbk
+    # command: >
+    #   -r /restore.gwbk
     networks:
       - default
       - proxy
