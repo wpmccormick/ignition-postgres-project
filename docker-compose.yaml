@@ -59,7 +59,7 @@ services:
       GATEWAY_SYSTEM_NAME: oee-backend
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: oee-backend.localtest.me
-      GATEWAY_MODULES_ENABLED: perspective
+      GATEWAY_MODULES_ENABLED: perspective,vision
     labels:
       traefik.enable: "true"
       traefik.hostname: "oee-backend"
