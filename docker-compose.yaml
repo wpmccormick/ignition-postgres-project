@@ -60,6 +60,8 @@ services:
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: oee-backend.localtest.me
       GATEWAY_MODULES_ENABLED: perspective,vision
+      IGNITION_ACTIVATION_TOKEN: ${BACKEND_IGNITION_ACTIVATION_TOKEN:-}
+      IGNITION_LICENSE_KEY: ${BACKEND_IGNITION_LICENSE_KEY:-}
     labels:
       traefik.enable: "true"
       traefik.hostname: "oee-backend"
@@ -83,6 +85,8 @@ services:
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: frontend.localtest.me
       GATEWAY_MODULES_ENABLED: perspective
+      IGNITION_ACTIVATION_TOKEN: ${FRONTEND_IGNITION_ACTIVATION_TOKEN:-}
+      IGNITION_LICENSE_KEY: ${FRONTEND_IGNITION_LICENSE_KEY:-}
     labels:
       traefik.enable: "true"
       traefik.hostname: "frontend"

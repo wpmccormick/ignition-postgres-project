@@ -1,0 +1,96 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "mesObjectSelector"
+            },
+            "position": {
+              "basis": "150px"
+            },
+            "props": {
+              "includeMESLineObjects": true,
+              "selectedMESObject": {
+                "childCount": -1,
+                "equipmentPath": "Design Group\\Sacramento\\Information Solutions\\Line 1",
+                "mesObjectType": "Line",
+                "mesObjectUUID": "73cc8734-1279-408f-ae6c-ee0d0ad10293",
+                "name": "Line 1"
+              }
+            },
+            "type": "mes.production.mesObjectSelector"
+          },
+          {
+            "meta": {
+              "name": "oeeRunDirector"
+            },
+            "position": {
+              "basis": "348px"
+            },
+            "propConfig": {
+              "props.equipmentPath": {
+                "binding": {
+                  "config": {
+                    "path": "../mesObjectSelector.props.selectedMESObject.equipmentPath"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "selectedMaterial": {
+                "materialLink": {
+                  "childCount": 0,
+                  "disabled": false,
+                  "mesObjectType": "MaterialDef",
+                  "mesObjectUUID": "ec135d0e-9e01-42e0-8e56-ed9f13412f9b",
+                  "name": "X"
+                },
+                "workOrderName": "WOX1",
+                "workOrderUUID": "61fa794a-3029-47b1-92b1-dbc84487fbf0"
+              },
+              "selectionMode": "Work Order"
+            },
+            "type": "mes.oee.runDirector"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 1
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "path": "../oeeRunDirector.props.selectedMaterial.workOrderName"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
