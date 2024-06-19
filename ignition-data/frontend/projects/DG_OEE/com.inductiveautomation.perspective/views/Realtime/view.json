@@ -16,11 +16,7 @@
             "props": {
               "includeMESLineObjects": true,
               "selectedMESObject": {
-                "childCount": -1,
-                "equipmentPath": "Design Group\\Sacramento\\Information Solutions\\Line 1",
-                "mesObjectType": "Line",
-                "mesObjectUUID": "73cc8734-1279-408f-ae6c-ee0d0ad10293",
-                "name": "Line 1"
+                "childCount": -1
               }
             },
             "type": "mes.production.mesObjectSelector"

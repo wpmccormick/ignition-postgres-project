@@ -1,7 +1,7 @@
 ---
 services:
   io-gateway:
-    image: bwdesigngroup/ignition-docker-iiot:8.1.33
+    image: bwdesigngroup/ignition-docker-iiot:8.1.36
     hostname: io-gateway
     volumes:
       - ./ignition-data/io-gateway:/workdir
@@ -12,7 +12,7 @@ services:
       GATEWAY_SYSTEM_NAME: io-gateway
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: io-gateway.localtest.me
-      GATEWAY_MODULES_ENABLED: opc-ua,perspective
+      GATEWAY_MODULES_ENABLED: opc-ua,vision
       IIOT_MODULES_ENABLED: mqtt-transmission
     labels:
       traefik.enable: "true"
@@ -24,7 +24,7 @@ services:
       - proxy
 
   mqtt-broker:
-    image: bwdesigngroup/ignition-docker-iiot:8.1.33
+    image: bwdesigngroup/ignition-docker-iiot:8.1.36
     hostname: mqtt-broker
     volumes:
       - ./ignition-data/mqtt-broker:/workdir
@@ -35,7 +35,7 @@ services:
       GATEWAY_SYSTEM_NAME: mqtt-broker
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: mqtt-broker.localtest.me
-      GATEWAY_MODULES_ENABLED: perspective
+      GATEWAY_MODULES_ENABLED: vision
       IIOT_MODULES_ENABLED: mqtt-distributor
     labels:
       traefik.enable: "true"
@@ -47,7 +47,7 @@ services:
       - proxy
 
   oee-backend:
-    image: bwdesigngroup/ignition-docker:8.1.33
+    image: bwdesigngroup/ignition-docker:8.1.37
     hostname: oee-backend
     volumes:
       - ./ignition-data/oee-backend:/workdir
@@ -59,7 +59,7 @@ services:
       GATEWAY_SYSTEM_NAME: oee-backend
       GATEWAY_PUBLIC_HTTPS_PORT: 443
       GATEWAY_PUBLIC_ADDRESS: oee-backend.localtest.me
-      GATEWAY_MODULES_ENABLED: perspective,vision
+      GATEWAY_MODULES_ENABLED: vision
       IGNITION_ACTIVATION_TOKEN: ${BACKEND_IGNITION_ACTIVATION_TOKEN:-}
       IGNITION_LICENSE_KEY: ${BACKEND_IGNITION_LICENSE_KEY:-}
     labels:
@@ -72,7 +72,7 @@ services:
       - proxy
 
   frontend:
-    image: bwdesigngroup/ignition-docker:8.1.33
+    image: bwdesigngroup/ignition-docker:8.1.37
     hostname: frontend
     volumes:
       - ./ignition-data/frontend:/workdir
