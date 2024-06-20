@@ -16,12 +16,7 @@
             "props": {
               "includeMESLineObjects": true,
               "selectedMESObject": {
-                "childCount": -1,
-                "disabled": false,
-                "equipmentPath": "",
-                "mesObjectType": "",
-                "mesObjectUUID": "",
-                "name": ""
+                "childCount": -1
               }
             },
             "type": "mes.production.mesObjectSelector"
@@ -134,6 +129,17 @@
     ],
     "meta": {
       "name": "root"
+    },
+    "propConfig": {
+      "custom.LineList": {
+        "binding": {
+          "config": {
+            "expression": "runScript(\"MES.getLineList\")\r\n"
+          },
+          "type": "expr"
+        },
+        "persistent": false
+      }
     },
     "props": {
       "direction": "column"
