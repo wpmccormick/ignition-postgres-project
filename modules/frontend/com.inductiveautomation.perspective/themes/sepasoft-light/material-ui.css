@@ -1,0 +1,81 @@
+.MuiPickersBasePicker-container .MuiPickersBasePicker-pickerView {
+	background-color: var(--inputDatePickerBackground);
+}
+
+.MuiPickersBasePicker-container .MuiPickersCalendarHeader-dayLabel {
+	color: var(--inputDatePickerDOWColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersCalendarHeader-iconButton {
+	background-color: var(--inputDatePickerBackground);
+}
+
+.MuiPickersBasePicker-container .MuiPickersCalendarHeader-iconButton:hover {
+	background-color: var(--inputDatePickerHoverBackground);
+	color: var(--inputDatePickerHoverColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersClock-clock {
+	background-color: var(--inputDatePickerClockBackground);
+}
+
+.MuiPickersBasePicker-container .MuiPickersClockNumber-clockNumber {
+	color: var(--inputDatePickerClockColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersClockNumber-clockNumberSelected {
+	background-color: var(--inputDatePickerClockSelectedBackground);
+	color: var(--inputDatePickerClockSelectedColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersClock-pin {
+	background-color: var(--inputDatePickerClockSelectedBackground);
+}
+
+.MuiPickersBasePicker-container .MuiPickersClockPointer-pointer {
+	background-color: var(--inputDatePickerClockSelectedBackground);
+}
+
+.MuiPickersBasePicker-container .MuiPickersClockPointer-thumb {
+	background-color: var(--inputDatePickerClockSelectedColor);
+	border-color: var(--inputDatePickerClockSelectedBackground);
+}
+
+.MuiPickersBasePicker-container .MuiPickersDay-day {
+	color: var(--inputDatePickerColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersDay-day:hover {
+	background-color: var(--inputDatePickerHoverBackground);
+	color: var(--inputDatePickerHoverColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersDay-daySelected {
+	background-color: var(--inputDatePickerSelectedBackground);
+	color: var(--inputDatePickerSelectedColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersDay-daySelected:hover {
+	background-color: var(--inputDatePickerSelectedBackground);
+	color: var(--inputDatePickerSelectedColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersToolbar-toolbar {
+	background-color: var(--inputDatePickerHeaderBackground);
+}
+
+.MuiPickersBasePicker-container .MuiPickersToolbarText-toolbarBtnSelected {
+	color: var(--inputDatePickerHeaderColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersToolbarText-toolbarTxt {
+	color: var(--inputDatePickerHeaderColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersYear-root {
+	color: var(--inputDatePickerColor);
+}
+
+.MuiPickersBasePicker-container .MuiPickersYear-yearSelected {
+	color: var(--inputDatePickerSelectedBackground);
+}

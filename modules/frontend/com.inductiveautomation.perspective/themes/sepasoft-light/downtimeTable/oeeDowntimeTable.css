@@ -1,0 +1,276 @@
+[class*="oee_downtimeTable__main"] {
+    z-index: 1;
+}
+
+[class*="oee_downtimeTable__main"] .MuiCollapse-wrapper {
+}
+
+[class*="oee_downtimeTable__main"] .MuiCollapse-entered {
+}
+
+[class*="oee_downtimeTable__main"] .MuiCollapse-wrapperInner > :first-child {
+}
+
+[class*="oee_downtimeTable__main"] .MuiCollapse-wrapperInner thead {
+	background-color: var(--primary-blue-40);
+}
+
+[class*="oee_downtimeTable__main"] .MuiList-root {
+	overflow: auto;
+}
+
+.oee_downtimeTable__menu {
+	background-color: var(--popupMenuBackground);
+	border: 1px solid var(--popupMenuBorderColor);
+	max-height: var(--popupMenuMaxHeight);
+	overflow-y: auto;
+}
+
+.oee_downtimeTable__menuItem {
+	background-color: var(--popupMenuBackground);
+	color: var(--popupMenuColor);
+	font-size: var(--popupMenuFontSize);
+	min-height: 36px;
+}
+
+.oee_downtimeTable__menuItem:hover {
+	background-color: var(--popupMenuHoverBackground);
+	color: var(--popupMenuHoverColor);
+}
+
+.oee_downtimeTable__selected {
+	background-color: var(--popupMenuSelectedBackground);
+	color: var(--popupMenuSelectedColor);
+}
+
+.oee_downtimeTable__selected:hover {
+	background-color: var(--popupMenuSelectedBackground);
+	color: var(--popupMenuSelectedColor);
+}
+
+.oee_downtimeTable__actionButton {
+	border-color: var(--buttonBackground);
+	color: var(--buttonColor);
+	border: solid 1px var(--buttonBorderColor);
+	border-radius: 4px;
+	margin: 8px;
+	padding: 4px 8px;
+}
+
+.oee_downtimeTable__actionButton:hover {
+	background-color: var(--buttonGroup1HoverBackground);
+	color: var(--buttonGroup1HoverColor);
+}
+
+.oee_downtimeTable__buttonBox {
+	text-align: center;
+	width: 100%;
+}
+
+.oee_downtimeTable__collapseRoot {
+	background-color: var(--background);
+	flex: auto;
+	overflow: auto;
+}
+
+.oee_downtimeTable__collapseRoot > div {
+	overflow: hidden;
+}
+
+.oee_downtimeTable__divider {
+	background-color: var(--dividerBackground);
+	margin: 8px 0 16px;
+}
+
+.oee_downtimeTable__equipmentLabel {
+	background-color: var(--equipmentLabelBackground);
+	color: var(--equipmentLabelColor);
+	font-size: var(--equipmentLabelFontSize);
+	margin-left: 8px;
+}
+
+.oee_downtimeTable__equipmentContainer {
+	margin: 8px 0 2px 8px;
+}
+
+.oee_downtimeTable__label {
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+	font-size: var(--labelFontSize);
+	margin-left: 8px;
+}
+
+.oee_downtimeTable__root {
+	display: flex;
+	flex-direction: column;
+}
+
+.oee_downtimeTable__scroll {
+	height: 100%;
+	overflow: auto;
+}
+
+.oee_downtimeTable__title {
+	flexGrow: 1;
+	color: var(--toolbarColor);
+	margin: 0 4px;
+}
+
+.oee_downtimeTable__toolbar {
+	background-color: var(--toolbarBackground);
+	font-size: var(--toolbarFontSize);
+	min-height: 48px;
+	padding-left: 8px;
+}
+
+.oee_downtimeTable__formControl {
+	flex: 1 1 auto;
+	height: 100%;
+	width: 100%;
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+}
+
+.oee_downtimeTable__formControl label {
+}
+
+.oee_downtimeTable__note {
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+	font-size: var(--font-size);
+	height: 100%;
+}
+
+.oee_downtimeTable__note textarea {
+	height: 100% !important;
+}
+
+.oee_downtimeTable__note fieldset {
+	border: var(--borderBottomWidth) var(--borderBottomStyle) var(--borderBottomColor);
+	border-radius: 4px;
+}
+
+.oee_downtimeTable__note:hover fieldset {
+	border: var(--borderBottomWidth) var(--borderBottomStyle) var(--borderBottomColor);
+	border-radius: 4px;
+}
+
+.oee_downtimeTable__wrapper {
+	padding: 16px;
+}
+
+.oee_downtimeTable__splitRoot {
+	background-color: var(--dialogBackground);
+	width: 100%;
+	padding: 8px;
+	margin-top: 16px;
+}
+
+.oee_downtimeTable__labelRoot {
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+	font-size: var(--labelFontSize);
+	display: flex;
+}
+
+.oee_downtimeTable__bottomCenterLabel {
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+	font-size: var(--labelFontSize);
+	width: 100%;
+	text-align: center;
+}
+
+.oee_downtimeTable__centerLabel {
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+	font-size: var(--labelFontSize);
+	width: 33%;
+	text-align: center;
+}
+
+.oee_downtimeTable__leftLabel {
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+	font-size: var(--labelFontSize);
+	width: 33%;
+}
+
+.oee_downtimeTable__rightLabel {
+	background-color: var(--labelBackground);
+	color: var(--labelColor);
+	font-size: var(--labelFontSize);
+	width: 33%;
+	text-align: right;
+}
+
+.oee_downtimeTable__slider {
+	background-color: var(--inputSliderBackground);
+	color: var(--inputSliderColor);
+}
+
+.oee_downtimeTable__title {
+	flex-grow: 1;
+	margin-right: 16px;
+}
+
+.oee_downtimeTable__reasonButton {
+	background-color: var(--downtimeReasonBackground);
+	border: solid 1px var(--downtimeReasonBorderColor);
+	border-radius: 4px;
+	color: var(--downtimeReasonColor);
+	font-size: var(--downtimeReasonFontSize);
+	margin: 8px;
+}
+
+.oee_downtimeTable__reasonButton:hover {
+	background-color: var(--downtimeReasonHoverBackground);
+	border: solid 1px var(--downtimeReasonHoverBorderColor);
+	border-radius: 4px;
+	color: var(--downtimeReasonHoverColor);
+}
+
+.oee_downtimeTable__selectedReason {
+	background-color: var(--downtimeReasonSelectedBackground);
+	border: solid 1px var(--downtimeReasonSelectedBorderColor);
+	border-radius: 4px;
+	color: var(--downtimeReasonSelectedColor);
+}
+
+.oee_downtimeTable__selectedReason:hover {
+	background-color: var(--downtimeReasonSelectedBackground);
+	border: solid 1px var(--downtimeReasonSelectedBorderColor);
+	border-radius: 4px;
+	color: var(--downtimeReasonSelectedColor);
+}
+
+.oee_downtimeTable__button {
+	border: 1px solid var(--buttonBorderColor);
+	border-radius: 4px;
+	margin: 16px 0;
+}
+
+.oee_downtimeTable__button:hover {
+	background-color: var(--buttonHoverBackground);
+	color: var(--buttonHoverColor);
+}
+
+.oee_downtimeTable__button:hover p {
+	background-color: inherit;
+	color: inherit;
+}
+
+.oee_downtimeTable__list {
+	padding-left: 8px;
+}
+
+.oee_downtimeTable__selected {
+	background-color: var(--primary-green-30);
+	border-color: var(--primary-green-30);
+	color: var(--tableColor);
+}
+
+.oee_downtimeTable__selected p {
+	background-color: inherit;
+	color: inherit;
+}

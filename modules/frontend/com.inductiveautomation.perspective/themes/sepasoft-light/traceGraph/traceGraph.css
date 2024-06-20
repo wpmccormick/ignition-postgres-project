@@ -1,0 +1,6 @@
+.mes_traceGraph__diagram {
+	width: 100%;
+	height:  calc(100% - 25px);
+	border: solid 1px grey;
+	background-color: white;
+}

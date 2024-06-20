@@ -8,4 +8,6 @@ databaseChangeLog:
   - include:
       file: tables/Example.sql
   - include:
+      file: tables/user_preferenses.sql
+  - include:
       file: simulated-data/insert-values.sql

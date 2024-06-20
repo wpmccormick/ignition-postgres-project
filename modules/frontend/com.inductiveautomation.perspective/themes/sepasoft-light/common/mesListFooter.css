@@ -1,0 +1,5 @@
+.mes_listFooter__footer {
+	background-color: var(--listBorderColor);
+	border-bottom-left-radius: var(--listBorderRadius);
+	border-bottom-right-radius: var(--listBorderRadius);
+}

@@ -1,0 +1,32 @@
+.mes_tree__main {
+	background-color: var(--treeBackground);
+}
+
+.mes_tree__main .rc-tree-node-selected {
+	background-color: var(--treeSelectedBackground);
+	border-color: var(--treeSelectedBorderColor);
+	color: var(--treeSelectedColor);
+}
+
+.mes_tree__main .nodeIcon svg {
+	font-size: var(--treeIconSize);
+}
+
+.mes_tree__main .switcherIcon svg {
+	color: var(--treeArrowColor);
+}
+
+.mes_tree__main .nodeClosed svg path {
+	fill: var(--treeIconColorNodeClosed);
+}
+
+.mes_tree__main .nodeOpen svg path {
+	fill: var(--treeIconColorNodeOpen);
+}
+
+.mes_tree__treeWrapper {
+	background-color: var(--treeBackground);
+	border-color: var(--sectionBorderColor);
+	color: var(--treeColor);
+	font-size: var(--treeFontSize);
+}

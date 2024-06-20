@@ -1,0 +1,36 @@
+.mes_columnChooserToggle__button {
+	background-color: transparent;
+	color: var(--toolbarButtonColor);
+	transition: none;
+}
+
+.mes_columnChooserToggle__button:hover {
+	background-color: var(--toolbarButtonHoverBackground);
+	color: var(--toolbarButtonHoverColor);
+}
+
+.mes_columnChooserToggle__columnChooser {
+	background-color: var(--tableColumnChooserBackground);
+	color: var(--tableColumnChooserColor);
+}
+
+.mes_columnChooserToggle__columnChooser > li:hover {
+	background-color: var(--tableColumnChooserHoverBackground);
+	color: var(--tableColumnChooserHoverColor);
+}
+
+.mes_columnChooserToggle__columnChooser > li.MuiListItem-root {
+	font-size: var(--tableColumnChooserFontSize);
+}
+
+.mes_columnChooserToggle__columnChooser > li.MuiTypography-root {
+	font-size: var(--tableColumnChooserFontSize);
+}
+
+.mes_columnChooserToggle__columnChooser > li svg {
+	color: var(--tableColumnChooserCheckboxColor);
+}
+
+.mes_columnChooserToggle__columnChooser > li .MuiCheckbox-root:hover {
+	background-color: var(--tableColumnChooserCheckboxHoverBackground);
+}

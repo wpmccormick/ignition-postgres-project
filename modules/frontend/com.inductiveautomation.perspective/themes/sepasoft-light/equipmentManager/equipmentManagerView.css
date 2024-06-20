@@ -1,0 +1,9 @@
+
+.mes_equipmentManagerView__placeholder {
+	background-image: linear-gradient(45deg, #cc2b63 25%, #a69242 25%, #a69242 50%, #cc2b63 50%, #cc2b63 75%, #a69242 75%, #a69242 100%);
+	background-size: 56.57px 56.57px;
+}
+
+.mes_equipmentManagerView__icon--inactive {
+	color: red;
+}

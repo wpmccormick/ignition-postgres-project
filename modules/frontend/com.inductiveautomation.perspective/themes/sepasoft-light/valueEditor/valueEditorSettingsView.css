@@ -1,0 +1,105 @@
+.mes_valueEditorSettingsView__checkbox {
+	color: var(--inputCheckboxColor);
+}
+
+.mes_valueEditorSettingsView__checkbox:hover {
+	background-color: var(--inputCheckboxHoverBackground);
+}
+
+.mes_valueEditorSettingsView__checkboxLabel .MuiFormControlLabel-label {
+	background-color: var(--inputCheckboxLabelBackground);
+	color: var(--inputCheckboxLabelColor);
+	font-size: var(--inputCheckboxLabelFontSize);
+}
+
+.mes_valueEditorSettingsView__datetime button {
+	color: var(--inputDatePickerIconColor);
+}
+
+.mes_valueEditorSettingsView__datetime button:hover {
+	background-color: var(--inputDatePickerIconHoverBackground);
+}
+
+.mes_valueEditorSettingsView__datetime button:hover svg path {
+	fill: var(--inputDatePickerIconHoverColor);
+}
+
+.mes_valueEditorSettingsView__datetime label {
+	color: var(--inputDatePickerColor);
+}
+
+.mes_valueEditorSettingsView__datetime svg path {
+	color: var(--inputDatePickerIconColor);
+}
+
+.mes_valueEditorSettingsView__formControl {
+	background-color: var(--background);
+}
+
+.mes_valueEditorSettingsView__formControl input {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_valueEditorSettingsView__inputs {
+	background-color: var(--sectionBackground);
+	border-color: var(--sectionBorderColor);
+}
+
+.mes_valueEditorSettingsView__label {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_valueEditorSettingsView__labelShrink {
+	font-size: inherit;
+}
+
+.mes_valueEditorSettingsView__main {
+	background-color: var(--dialogBackground);
+}
+
+.mes_valueEditorSettingsView__main .rc-tree-node-selected {
+	background-color: var(--treeSelectedBackground);
+	border-color: var(--treeSelectedBorderColor);
+	color: var(--treeSelectedColor);
+}
+
+.mes_valueEditorSettingsView__main .nodeIcon svg {
+	font-size: var(--treeIconSize);
+}
+
+.mes_valueEditorSettingsView__main .switcherIcon svg {
+	font-size: var(--treeIconSize);
+	color: var(--treeArrowColor);
+}
+
+.mes_valueEditorSettingsView__main .nodeClosed svg path {
+	fill: var(--treeIconColorNodeClosed);
+}
+
+.mes_valueEditorSettingsView__main .nodeOpen svg path {
+	fill: var(--treeIconColorNodeOpen);
+}
+
+.mes_valueEditorSettingsView__root {
+	background-color: var(--dialogBackground);
+}
+
+.mes_valueEditorSettingsView__title {
+	color: var(--toolbarColor);
+}
+
+.mes_valueEditorSettingsView__toolbar {
+	background-color: var(--toolbarBackground);
+	color: var(--toolbarColor);
+	font-size: var(--toolbarFontSize);
+}
+
+.mes_valueEditorSettingsView__underline:not(.Mui-disabled):after {
+	border-bottom: var(--borderBottomWidth) var(--borderBottomStyle) var(--borderBottomColor);
+}
+
+.mes_valueEditorSettingsView__underline:hover:not(.Mui-disabled):before {
+	border-bottom: var(--borderBottomWidth) var(--borderBottomStyle) var(--borderBottomColor);
+}

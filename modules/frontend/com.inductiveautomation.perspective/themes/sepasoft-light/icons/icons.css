@@ -1,0 +1,110 @@
+.mes_icon__primary {
+	fill: var(--primary-blue-20);
+}
+
+.mes_icon__primaryDark {
+	fill: var(--primary-blue-50);
+}
+
+.mes_icon__secondary {
+	fill: var(--secondary-red-20);
+}
+
+.mes_icon__secondaryDark {
+	fill: var(--secondary-red-50);
+}
+
+.mes_icon__tertiaryDark {
+	fill: var(--primary-green-50);
+}
+
+.mes_icon__quaternaryDark {
+	fill: var(--primary-yellow-50);
+}
+
+.mes_icon__quaternaryDarkEmpty {
+	stroke: var(--primary-yellow-50, black);
+	fill: none
+}
+
+.mes_icon__background {
+	fill: var(--background);
+}
+
+.mes_icon__primaryBackground {
+	fill: var(--altBackground);
+}
+
+.mes_icon__error {
+	fill: var(--secondary-red-60);
+}
+
+.mes_icon__heavyText {
+	fill: var(--black-87);
+}
+
+.mes_icon__mainText {
+	fill: var(--black-54);
+}
+
+.mes_icon__message {
+	fill: #3C71AA;
+}
+
+.mes_icon__messageRequiresValue {
+	fill: #4D9D45;
+}
+
+.mes_icon__messageAlert {
+	fill: #BE2025;
+}
+
+.mes_icon__lightText {
+	fill: var(--black-35);
+}
+
+.mes_icon__plannedDowntime {
+	fill: var(--primary-blue-50);
+}
+
+.mes_icon__unplannedDowntime {
+	fill: var(--secondary-brown-50);
+}
+
+.mes_icon__disabled {
+	fill: rgba(0,0,0,0.26);
+}
+
+.mes_icon__transparent {
+	fill: rgba(0,0,0,0);
+}
+
+.mes_icon__foreground {
+	color: var(--color);
+}
+
+.mes_icon__white {
+	color: var(--white);
+}
+
+
+.mes_icon__charcoal {
+	fill: var(--secondary-charcoal-50);
+}
+
+
+.mes_icon__lightGreen {
+	fill: var(--lightGreen);
+}
+
+.mes_icon__mediumGreen {
+	fill: var(--mediumGreen);
+}
+
+.mes_icon__darkGreen {
+	fill: var(--darkGreen);
+}
+
+.mes_icon__black {
+	fill: var(--black);
+}

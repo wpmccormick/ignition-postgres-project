@@ -1,0 +1,16 @@
+@import "./variables.css";
+@import "../sepasoft-light/material-ui.css";
+@import "../sepasoft-light/common/index.css";
+@import "../sepasoft-light/icons/index.css";
+@import "../sepasoft-light/analysisSelector/index.css";
+@import "../sepasoft-light/analysisTable/index.css";
+@import "../sepasoft-light/document/index.css";
+@import "../sepasoft-light/downtimeTable/index.css";
+@import "../sepasoft-light/lotSelector/index.css";
+@import "../sepasoft-light/equipmentManager/index.css";
+@import "../sepasoft-light/materialManager/index.css";
+@import "../sepasoft-light/runDirector/index.css";
+@import "../sepasoft-light/scheduleSelector/index.css";
+@import "../sepasoft-light/scheduleView/index.css";
+@import "../sepasoft-light/traceGraph/index.css";
+@import "../sepasoft-light/workOrderTable/index.css";

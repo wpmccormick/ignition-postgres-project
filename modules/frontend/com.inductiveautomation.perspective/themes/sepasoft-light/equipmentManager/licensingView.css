@@ -1,0 +1,9 @@
+.mes_license__button {
+	border-color: var(--buttonBackground);
+	color: var(--buttonColor);
+	border-color: var(--buttonBorderColor);
+}
+
+.mes_license__text {
+	color: var(--color);
+}

@@ -1,0 +1,12 @@
+/* 
+.mes_scheduleView__scheduleView {
+	height: 100%;
+}
+
+.mes_scheduleView__scheduleView .MuiCollapse-wrapper, .mes_scheduleView__scheduleView .MuiCollapse-entered {
+	height: 100% !important;
+}
+
+.mes_scheduleView__scheduleView .MuiCollapse-wrapperInnger > :first-child {
+	height: 100%;
+} */

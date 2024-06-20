@@ -1,0 +1,38 @@
+.mes_manager__tabsBar {
+	background-color: var(--toolbarBackground);
+}
+
+.mes_manager__tabsBar * {
+	outline: none;
+}
+
+/*
+.mes_manager__root {
+	display: flex;
+	align-items: center;
+	color: var(--toolbarButtonColor);
+}
+
+.mes_manager__underline:before {
+	border-bottom-color: var(--toolbarButtonColor);
+}
+
+.mes_manager__underline:after {
+	border-bottom-color: var(--toolbarButtonHoverBackground);
+}
+
+.mes_manager__main {
+}
+
+.mes_manager__underline {
+}
+
+.mes_manager__gridWhole {
+}
+
+.mes_manager__gridLeft {
+}
+
+.mes_manager__gridRight {
+}
+*/

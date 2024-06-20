@@ -1,0 +1,176 @@
+.mes_timeline__root {
+	background-color: var(--timelineBackground);
+	color: var(--timelineColor);
+}
+
+.mes_timeline__root .rct-header-root {
+	background-color: var(--timelineHeaderBackground);
+}
+
+.mes_timeline__root .rct-header-root h4 {
+	background-color: var(--timelineHeaderBackground);
+	color: var(--timelineHeaderColor);
+}
+
+.mes_timeline__root .rct-header-root .rct-dateHeader {
+	background-color: var(--timelineHeaderDateBackground);
+	color: var(--timelineHeaderDateColor);
+}
+
+.mes_timeline__root .rct-item:hover {
+	border-color: var(--timelineBorderHoverColor);
+}
+
+.mes_timeline__root .custom-group-span svg {
+	vertical-align: middle;
+}
+
+.mes_timeline__todayMarker {
+	background-color: var(--timelineBackground);
+	color: var(--timelineColor);
+}
+
+/* Needs higher specificity */
+.react-calendar-timeline .rct-header-root.mes_timeline__stickyTimelineHeaders {
+	background: var(--timelineHeaderBackground);
+}
+
+.mes_timeline__stickyTimelineHeaders {
+	background: var(--timelineHeaderBackground);
+	color: var(--timelineHeaderColor);
+}
+
+.mes_timeline__stickyTimelineHeaders .rct-calendar-header, .mes_timeline__stickyTimelineHeaders .rct-dateHeader, .react-calendar-timeline .mes_timeline__stickyTimelineHeaders .rct-dateHeader {
+	background: inherit;
+}
+
+.mes_timeline__state--UNKNOWN {
+	background: #FFFFFF;
+}
+
+.mes_timeline__state--DOWN_UNPLANNED {
+	background: #FF0000;
+}
+
+.mes_timeline__state--DOWN_PLANNED {
+	background: #0000FF;
+}
+
+.mes_timeline__state--BLOCKED {
+	background: #FFC800;
+}
+
+.mes_timeline__state--STARVED {
+	background: #00FFFF;
+}
+
+.mes_timeline__state--RUNNING {
+	background: #00FF00;
+}
+
+.mes_timeline__state--IDLE {
+	background: #C0C0C0;
+}
+
+.mes_timeline__state--DISABLED {
+	background: #404040;
+}
+
+.mes_timeline__state--CHANGEOVER {
+	background: #FFFF00;
+}
+
+.mes_timeline__state--MAINTENANCE {
+	background: #FF00FF;
+}
+
+.mes_timeline__state--CLEANING {
+	background: #004A98;
+}
+
+.mes_timeline__mode--COMBINATION {
+
+}
+.mes_timeline__mode--UNKNOWN {
+	background: #FFFFFF;
+}
+
+.mes_timeline__mode--PRODUCTION {
+	background: #00FF00;
+}
+
+.mes_timeline__mode--IDLE {
+	background: #C0C0C0;
+}
+
+.mes_timeline__mode--CHANGEOVER {
+	background: #FFFF00;
+}
+
+.mes_timeline__mode--MAINTENANCE {
+	background: #FF00FF;
+}
+
+.mes_timeline__mode--CLEANING {
+	background: #004A98;
+}
+
+.mes_timeline__mode--OTHER {
+	background: #FFAFAF;
+}
+
+.mes_timeline__mode--DISABLED {
+	background: #404040;
+}
+
+.mes_timeline__restriction {
+	background: grey;
+}
+
+.mes_timeline__operation--SELECTED {
+	background: #9ED23E;
+	color: #000000;
+	border: 1px solid #646464;
+}
+
+.mes_timeline__operation--AUTO_INCOMPLETE {
+	background: #DDAE12;
+	color: #000000;
+	border: 1px solid #646464;
+}
+
+.mes_timeline__operation--AUTO_IN_PROCESS {
+	background: #FFDA06;
+	color: #000000;
+	border: 1px solid #646464;
+}
+
+.mes_timeline__operation--AUTO_COMPLETE {
+	background: #785F13;
+	color: #000000;
+	border: 1px solid #646464;
+}
+
+.mes_timeline__operation--MANUAL_INCOMPLETE {
+	background: #0971C4;
+	color: #000000;
+	border: 1px solid #646464;
+}
+
+.mes_timeline__operation--MANUAL_IN_PROCESS {
+	background: #00AFFB;
+	color: #000000;
+	border: 1px solid #646464;
+}
+
+.mes_timeline__operation--MANUAL_COMPLETE {
+	background: #5D7A8D;
+	color: #000000;
+	border: 1px solid #646464;
+}
+
+.mes_timeline__operation--FAULTED {
+	background: #AC0000;
+	color: #000000;
+	border: 1px solid #646464;
+}

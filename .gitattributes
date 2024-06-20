@@ -1,0 +1,2 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.gwbk filter=lfs diff=lfs merge=lfs -text

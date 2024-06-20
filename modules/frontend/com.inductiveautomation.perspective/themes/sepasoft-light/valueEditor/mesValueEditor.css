@@ -1,0 +1,19 @@
+[class*="mes_valueEditor__main"] {
+}
+
+[class*="mes_valueEditor__main"] .MuiCollapse-wrapper {
+}
+
+[class*="mes_valueEditor__main"] .MuiCollapse-entered {
+}
+
+[class*="mes_valueEditor__main"] .MuiCollapse-wrapperInner > :first-child {
+}
+
+[class*="mes_valueEditor__main"] .MuiCollapse-wrapperInner thead {
+	background-color: var(--primary-light);
+}
+
+[class*="mes_valueEditor__main"] .MuiList-root {
+	overflow: auto;
+}

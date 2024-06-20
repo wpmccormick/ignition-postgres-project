@@ -1,0 +1,43 @@
+.mes_colorButton__button {
+	background-color: var(--buttonBackground);
+	color: var(--buttonColor);
+	font-size: var(--buttonFontSize);
+}
+
+.mes_colorButton__button:hover {
+	background-color: var(--buttonHoverBackground);
+	color: var(--buttonHoverColor);
+}
+
+.mes_colorButton__button1 {
+	background-color: var(--buttonGroup1Background);
+	color: var(--buttonGroup1Color);
+	font-size: var(--buttonFontSize);
+}
+
+.mes_colorButton__button1:hover {
+	background-color: var(--buttonGroup1HoverBackground);
+	color: var(--buttonGroup1HoverColor);
+}
+
+.mes_colorButton__button2 {
+	background-color: var(--buttonGroup2Background);
+	color: var(--buttonGroup2Color);
+	font-size: var(--buttonFontSize);
+}
+
+.mes_colorButton__button2:hover {
+	background-color: var(--buttonGroup2HoverBackground);
+	color: var(--buttonGroup2HoverColor);
+}
+
+.mes_colorButton__button3 {
+	background-color: var(--buttonGroup3Background);
+	color: var(--buttonGroup3Color);
+	font-size: var(--buttonFontSize);
+}
+
+.mes_colorButton__button3:hover {
+	background-color: var(--buttonGroup3HoverBackground);
+	color: var(--buttonGroup3HoverColor);
+}

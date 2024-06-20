@@ -1,0 +1,42 @@
+.mes_checkboxList__root {
+	background-color: var(--listBackground);
+	border: var(--listBorderWidth) var(--listBorderStyle) var(--listBorderColor);
+	border-radius: var(--listBorderRadius);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1em;
+	padding: 0.35em;
+}
+
+.mes_checkboxList__checkbox {
+	color: var(--listCheckboxColor);
+	padding: var(--listCheckboxPadding);
+}
+
+.mes_checkboxList__list {
+	overflow-y: auto;
+	padding: var(--listPadding);
+}
+
+.mes_checkboxList__listItem {
+	background-color: var(--listItemBackground);
+	color: var(--listItemColor);
+	font-size: var(--listItemFontSize);
+	padding: var(--listItemPadding);
+}
+
+.mes_checkboxList__listItem:hover {
+	background-color: var(--listItemHoverBackground);
+	color: var(--listItemHoverColor);
+}
+
+.mes_checkboxList__listItemIcon {
+	min-width: 2em;
+}
+
+.mes_checkboxList__zebraStripe {
+}
+
+.mes_checkboxList__zebraStripe > div:nth-of-type(odd) {
+	background-color: var(--listItemAltBackground);
+}

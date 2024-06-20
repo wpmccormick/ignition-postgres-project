@@ -1,0 +1,36 @@
+.mes_iconButton__button {
+	background-color: var(--iconButtonBackground);
+	color: var(--iconButtonColor);
+	transition: none;
+}
+
+.mes_iconButton__button:hover {
+	background-color: var(--iconButtonHoverBackground);
+	color: var(--iconButtonHoverColor);
+}
+
+.mes_iconButton__listButton {
+	background-color: transparent;
+	color: var(--listHeaderIconColor);
+	transition: none;
+}
+
+.mes_iconButton__listButton:hover {
+	background-color: var(--listHeaderIconHoverBackground);
+	color: var(--toolbarButtonHoverColor);
+}
+
+.mes_iconButton__toolbarButton {
+	background-color: transparent;
+	color: var(--toolbarButtonColor);
+	transition: none;
+}
+
+.mes_iconButton__toolbarButton:hover {
+	background-color: var(--toolbarButtonHoverBackground);
+	color: var(--toolbarButtonHoverColor);
+}
+
+.mes_iconButton__disabled, .MuiIconButton-root.Mui-disabled {
+	color: rgba(0, 0, 0, 0.26) !important;
+}

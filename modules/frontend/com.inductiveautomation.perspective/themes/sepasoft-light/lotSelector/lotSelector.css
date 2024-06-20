@@ -1,0 +1,16 @@
+.mes_lotSelector__input {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_lotSelector__dropdown {
+	background-color: var(--inputDropDownBackground);
+	color: var(--inputDropDownColor);
+	font-size: var(--inputDropDownFontSize);
+	max-height: var(--inputDropDownMaxHeight);
+}
+
+.mes_lotSelector__textField {
+	background-color: var(--inputBackground);
+	color: var(--inputLabelColor);
+}

@@ -1,0 +1,37 @@
+.mes_autocompleteDropdown__input {
+	color: var(--inputColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_autocompleteDropdown__dropdown {
+	background-color: var(--inputDropDownBackground);
+	color: var(--inputDropDownColor);
+	font-size: var(--inputDropDownFontSize);
+	max-height: var(--inputDropDownMaxHeight);
+}
+
+.mes_autocompleteDropdown__textField {
+	background-color: var(--inputBackground);
+	color: var(--inputLabelColor);
+}
+
+.mes_autocompleteDropdown__container {
+	background-color: var(--listBackground);
+	color: var(--listItemColor);
+}
+
+.mes_autocompleteDropdown__menu {
+	background-color: var(--inputDropDownBackground);
+	max-height: var(--inputDropDownMaxHeight);
+}
+
+
+.mes_autocompleteDropdown_menuItem .mes_mesAutocompleteDropdown__menuItemSelected {
+    background-color: var(--inputDropDownSelectedBackground);
+    color: var(--inputDropDownSelectedColor);
+}
+
+.mes_autocompleteDropdown_menuItem .mes_mesAutocompleteDropdown__dropdown:hover {
+	background-color: var(--inputDropDownHoverBackground);
+	color: var(--inputDropDownHoverColor);
+}

@@ -1,0 +1,4 @@
+.MuiButtonBase-root.Mui-disabled p {
+    font-style: italic;
+    color: gray;
+}

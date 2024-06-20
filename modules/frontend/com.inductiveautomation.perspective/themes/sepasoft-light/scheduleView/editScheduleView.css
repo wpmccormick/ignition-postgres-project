@@ -1,0 +1,12 @@
+.mes_editScheduleView__tab {
+	color: var(--color);
+}
+
+.mes_editScheduleView__operationSelectionLabel {
+	color: var(--color);
+}
+
+.mes_editScheduleView__labelPanel {
+	background-color: var(--editScheduleBackground);
+	color: var(--color);
+}

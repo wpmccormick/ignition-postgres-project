@@ -1,0 +1,23 @@
+.mes_editGeneralView__root {
+	background-color: var(--editScheduleBackground);
+	color: var(--color);
+}
+
+.mes_editGeneralView__main {
+	background-color: var(--editScheduleBackground);
+	color: var(--color);
+}
+
+.mes_editGeneralView__flexColumnContainer {
+	background-color: var(--editScheduleBackground);
+	color: var(--color);
+}
+
+.mes_editGeneralView__settingsColumn {
+	background-color: var(--editScheduleBackground);
+	color: var(--color);
+}
+
+.mes_editGeneralView__label {
+	color: var(--color);
+}

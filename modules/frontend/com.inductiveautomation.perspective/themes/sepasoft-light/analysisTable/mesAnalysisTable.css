@@ -1,0 +1,44 @@
+
+[class*="mes_analysisTable__main"] {
+	background-color: var(--tableBackground);
+}
+
+/* [class*="mes_analysisTable__main"] .MuiCollapse-wrapper {
+}
+
+[class*="mes_analysisTable__main"] .MuiCollapse-entered {
+}
+
+[class*="mes_analysisTable__main"] .MuiCollapse-wrapperInner > :first-child {
+} */
+
+[class*="mes_analysisTable__main"] .MuiCollapse-wrapperInner thead {
+	background-color: var(--primary-light);
+}
+
+[class*="mes_analysisTable__main"] .MuiList-root {
+	overflow: auto;
+}
+
+.mes_analysisTable__contextMenu {
+	background-color: var(--contextMenuBackground);
+	border-color: var(--contextMenuBorderColor);
+}
+
+.mes_analysisTable__contextMenuRoot {
+	background-color: var(--contextMenuBackground);
+	color: var(--contextMenuColor);
+	font-size: var(--contextMenuFontSize);
+}
+
+.mes_analysisTable__contextMenuRoot:hover {
+	background-color: var(--contextMenuHoverBackground);
+}
+
+.mes_analysisTable__contextMenuRoot:hover .MuiListItemIcon-root {
+	color: var(--contextMenuHoverColor);
+}
+
+.mes_analysisTable__contextMenuRoot:hover .MuiListItemText-primary {
+	color: var(--contextMenuHoverColor);
+}

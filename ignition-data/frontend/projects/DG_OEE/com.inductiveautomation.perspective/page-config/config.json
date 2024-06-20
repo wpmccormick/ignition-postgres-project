@@ -1,0 +1,10 @@
+{
+  "pages": {
+    "/": {
+      "viewPath": "Realtime"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom"
+  }
+}
