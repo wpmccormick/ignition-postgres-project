@@ -65,6 +65,7 @@ Keep in mind that these unique classes give you direct access to specific elemen
 ### CSS Imports
 
 Imports provide the ability to develop or author themes in a modular fashion.  They also make overriding easy (see section on overriding themes).  There are two rules that we expect you to follow when using imports.
+
 1) Imports should be declared at the top of the each css file.  
 2) Each import statement must begin with the CSS at-rule `@import`, specify the relative path to the file to import, and terminate with a semicolon. Imports that do not meet this criteria will be ignored. You may use single or double quotes surrounding the import path.  For example:
 
@@ -80,10 +81,10 @@ Overriding or adapting themes is easy by leveraging the "C" in CSS (Cascading St
 
 **light.css**  
 
-```
-@import "./light/index.css" 
-@import "./custom/overrides.css"
-```
+        ```
+        @import "./light/index.css" 
+        @import "./custom/overrides.css"
+        ```
 
 We do not attempt to rewrite this file on startup unless it does not exist.
 
