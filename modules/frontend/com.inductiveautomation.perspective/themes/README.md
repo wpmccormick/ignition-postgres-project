@@ -2,7 +2,7 @@
 
 ## Overview
 
-Theming in Perspective allows designers to customize the look-and-feel (**not layout**) of their Perspective projects at a broad level. A projects active theme is defined in a project's session properties.  Where applicable, any styles applied using Perspective Style Classes or inline styles within the Designer should still override anything inherited from a theme.  It is possible to work around this rule, but that is not something we would recommend. Theming is considered an advanced feature of Perspective.  As such, we operate under the assumption that anyone altering these files has some knowledge of CSS. By making use of CSS variables, imports, and descriptive class selectors, you will find that we have provided features and structure to help alleviate some of the frustrations inherent to managing large amounts of CSS. 
+Theming in Perspective allows designers to customize the look-and-feel (**not layout**) of their Perspective projects at a broad level. A projects active theme is defined in a project's session properties.  Where applicable, any styles applied using Perspective Style Classes or inline styles within the Designer should still override anything inherited from a theme.  It is possible to work around this rule, but that is not something we would recommend. Theming is considered an advanced feature of Perspective.  As such, we operate under the assumption that anyone altering these files has some knowledge of CSS. By making use of CSS variables, imports, and descriptive class selectors, you will find that we have provided features and structure to help alleviate some of the frustrations inherent to managing large amounts of CSS.
 
 ## Available Themes
 
@@ -23,9 +23,9 @@ Changes to any files within this directory will trigger the reprocessing of any 
 
 Before getting started, we recommend that you familiarize yourself with the structure of one of our provided themes.
 
-** **IMPORTANT** **  
+****IMPORTANT****  
 
-Both the `light` and `dark` themes are owned and maintained by Inductive Automation.  This means that any changes to the `light` and `dark` folders will be discarded on startup.  This rule pertains to the `light` and `dark` folders only. 
+Both the `light` and `dark` themes are owned and maintained by Inductive Automation.  This means that any changes to the `light` and `dark` folders will be discarded on startup.  This rule pertains to the `light` and `dark` folders only.
 
 Note, changes to `light.css` and `dark.css` entry points will not be discarded on startup to provide you with the ability to override certain rules declared and inherited from the corresponding theme directories (see section on overriding or adapting themes).
 
@@ -61,10 +61,10 @@ In use:
 
 Keep in mind that these unique classes give you direct access to specific elements.  You can find a list of available selectors, and their defined rules, in their respective files.  If you can not find the selector you need, then it is likely not defined.  You may either request it or use one of the many other ways to style elements in Perspective.
 
-
 ### CSS Imports
 
 Imports provide the ability to develop or author themes in a modular fashion.  They also make overriding easy (see section on overriding themes).  There are two rules that we expect you to follow when using imports.
+
 1) Imports should be declared at the top of the each css file.  
 2) Each import statement must begin with the CSS at-rule `@import`, specify the relative path to the file to import, and terminate with a semicolon. Imports that do not meet this criteria will be ignored. You may use single or double quotes surrounding the import path.  For example:
 
@@ -73,17 +73,16 @@ Imports provide the ability to develop or author themes in a modular fashion.  T
          @import './variables.css';
         ```
 
-
 ## Overriding or Adapting Themes
 
 Overriding or adapting themes is easy by leveraging the "C" in CSS (Cascading Style Sheet).  Simply add your own CSS import pointing to your own custom style sheet containing the rulesets that you want to override or adapt AFTER any existing imports.  For example, to override something declared in IA's owned light theme, add your own import in the `light.css` entry file like so:
 
 **light.css**  
 
-```
-@import "./light/index.css" 
-@import "./custom/overrides.css"
-```
+        ```
+        @import "./light/index.css" 
+        @import "./custom/overrides.css"
+        ```
 
 We do not attempt to rewrite this file on startup unless it does not exist.
 
