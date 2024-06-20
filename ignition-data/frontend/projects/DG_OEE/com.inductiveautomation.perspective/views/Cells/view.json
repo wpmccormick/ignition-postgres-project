@@ -1,0 +1,76 @@
+{
+  "custom": {
+    "key": null
+  },
+  "params": {},
+  "propConfig": {
+    "custom.key": {
+      "binding": {
+        "config": {
+          "queryPath": ""
+        },
+        "type": "query"
+      },
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 192,
+      "width": 171
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Name"
+        },
+        "position": {
+          "basis": "32px"
+        },
+        "props": {
+          "text": "Label"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Spacer"
+        },
+        "position": {
+          "basis": "65px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "State"
+        },
+        "position": {
+          "basis": "32px"
+        },
+        "props": {
+          "text": "Label"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Spacer_0"
+        },
+        "position": {
+          "basis": "65px"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

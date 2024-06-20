@@ -16,7 +16,12 @@
             "props": {
               "includeMESLineObjects": true,
               "selectedMESObject": {
-                "childCount": -1
+                "childCount": -1,
+                "disabled": false,
+                "equipmentPath": "",
+                "mesObjectType": "",
+                "mesObjectUUID": "",
+                "name": ""
               }
             },
             "type": "mes.production.mesObjectSelector"
@@ -77,6 +82,52 @@
         ],
         "meta": {
           "name": "FlexContainer"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "KPIs"
+        },
+        "position": {
+          "basis": "112px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "FlexRepeater"
+            },
+            "position": {
+              "basis": "320px",
+              "grow": 1
+            },
+            "props": {
+              "path": "Cells"
+            },
+            "type": "ia.display.flex-repeater"
+          }
+        ],
+        "meta": {
+          "name": "Cells"
+        },
+        "position": {
+          "basis": "200px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "Downtime"
+        },
+        "position": {
+          "basis": "200px",
+          "grow": 1
+        },
+        "props": {
+          "direction": "column"
         },
         "type": "ia.container.flex"
       }
