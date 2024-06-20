@@ -134,7 +134,7 @@
       "custom.LineList": {
         "binding": {
           "config": {
-            "expression": "runScript(\"MES.getLineList\")\r\n"
+            "expression": "runScript(\"MES.get_line_list\")\r\n"
           },
           "type": "expr"
         },
