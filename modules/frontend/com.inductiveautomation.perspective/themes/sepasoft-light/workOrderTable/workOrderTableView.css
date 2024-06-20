@@ -1,0 +1,26 @@
+.mes_workOrderTableView__divider {
+	background-color: var(--divider-background);
+}
+
+.mes_workOrderTableView__menu {
+	background-color: var(--contextMenuBackground);
+	border-color: var(--contextMenuBorderColor);
+}
+
+.mes_workOrderTableView__menuItem {
+	background-color: var(--contextMenuBackground);
+	color: var(--contextMenuColor);
+	font-size: var(--contextMenuFontSize);
+}
+
+.mes_workOrderTableView__menuItem:hover {
+	background-color: var(--contextMenuHoverBackground);
+}
+
+.mes_workOrderTableView__menuItem:hover .MuiListItemIcon-root {
+	color: var(--contextMenuHoverColor);
+}
+
+.mes_workOrderTableView__menuItem:hover .MuiListItemText-primary {
+	color: var(--contextMenuHoverColor);
+}

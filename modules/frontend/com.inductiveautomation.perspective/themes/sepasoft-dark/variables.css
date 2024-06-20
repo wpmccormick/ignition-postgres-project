@@ -1,0 +1,290 @@
+@import "../color-variables.css";
+
+:root {
+	/* Theme settings */
+	--background: #212121;
+	--color: var(--white);
+	--faintBackground: #212121;
+	--altBackground: var(--white);
+	--errorColor: var(--secondary-red-60);
+	--primary-light: var(--primary-blue-10);
+
+	--buttonBackground: var(--black-65);
+	--buttonBorderColor: var(--primary-blue-20);
+	--buttonColor: var(--primary-blue-20);
+	--buttonFontSize: 14px;
+
+	--buttonHoverBackground: var(--primary-blue-60);
+	--buttonHoverBorderColor: var(--primary-blue-40);
+	--buttonHoverColor: var(--black-87);
+
+	--buttonGroup1Background: var(--primary-blue-40);
+	--buttonGroup1Color: var(--white);
+
+	--buttonGroup1HoverBackground: var(--primary-blue-60);
+	--buttonGroup1HoverColor: var(--white);
+
+	--buttonGroup2Background: var(--secondary-red-40);
+	--buttonGroup2Color: var(--white);
+
+	--buttonGroup2HoverBackground: var(--secondary-red-60);
+	--buttonGroup2HoverColor: var(--white);
+
+	--buttonGroup3Background: var(--primary-green-40);
+	--buttonGroup3Color: var(--white);
+
+	--buttonGroup3HoverBackground: var(--primary-green-60);
+	--buttonGroup3HoverColor: var(--white);
+
+	--checkboxCheckedColor: var(--color);
+	--checkboxHoverBackground: rgb(51 110 173 / 4%);
+
+	--contextMenuBackground: var(--primary-blue-40);
+	--contextMenuBorderColor: var(--white);
+	--contextMenuColor: var(--white);
+	--contextMenuFontSize: 20px;
+	--contextMenuHoverBackground: var(--primary-blue-20);
+	--contextMenuHoverColor: var(--white);
+
+	--dialogBackground: var(--faintBackground);
+	--dialogColor: var(--white);
+	--dialogFontSize: 16px;
+
+	--dialogButtonBackground: var(--primary-blue-40);
+	--dialogButtonColor: var(--white);
+	--dialogButtonFontSize: 14px;
+
+	--dialogButtonHoverBackground: var(--primary-blue-60);
+	--dialogButtonHoverColor: var(--white);
+
+	--dialogTitleBackground: var(--primary-blue-60);
+
+	--dialogTitleButtonColor: var(--white);
+
+	--dialogTitleButtonHoverBackground: var(--primary-blue-40);
+	--dialogTitleButtonHoverColor: var(--white);
+
+	--dialogTitleColor: var(--white);
+	--dialogTitleFontSize: 20px;
+
+	--dialogDividerBackground: var(--faintBackground);
+
+	--dividerBackground: var(--faintBackground);
+
+	--downtimeReasonBackground: var(--black-87);
+	--downtimeReasonBorderColor: var(--primary-blue-40);
+	--downtimeReasonColor: var(--primary-blue-40);
+	--downtimeReasonFontSize: 14px;
+	--downtimeReasonHoverBackground: var(--primary-blue-60);
+	--downtimeReasonHoverBorderColor: var(--primary-blue-40);
+	--downtimeReasonHoverColor: var(--white);
+	--downtimeReasonSelectedBackground: var(--primary-green-60);
+	--downtimeReasonSelectedBorderColor: var(--primary-blue-60);
+	--downtimeReasonSelectedColor: var(--white);
+
+	--drawerBackground: var(--faintBackground);
+
+	--editScheduleBackground: var(--faintBackground);
+
+	--equipmentLabelBackground: var(--faintBackground);
+	--equipmentLabelColor: var(--white);
+	--equipmentLabelFontSize: 16px;
+
+	--iconButtonBackground: var(--black-65);
+	--iconButtonColor: var(--white);
+
+	--iconButtonHoverBackground: var(--primary-blue-20);
+	--iconButtonHoverColor: var(--white);
+
+	--inputBackground: var(--faintBackground);
+	--inputBorderColor: var(--primary-blue-60);
+	--inputBorderStyle: solid;
+	--inputBorderWidth: 2px;
+	--inputColor: var(--white);
+	--inputFontSize: 16px;
+
+	--inputCheckboxColor: var(--primary-green-60);
+	--inputCheckboxHoverBackground: var(--primary-green-30);
+	--inputCheckboxLabelBackground: var(--faintBackground);
+	--inputCheckboxLabelColor: var(--white);
+	--inputCheckboxLabelFontSize: 1rem;
+
+	--inputLabelColor: var(--primary-blue-60);
+
+	--inputDatePickerBackground: var(--faintBackground);
+	--inputDatePickerColor: var(--white);
+
+	--inputDatePickerClockBackground: var(--faintBackground);
+	--inputDatePickerClockColor: var(--white);
+	--inputDatePickerClockSelectedBackground: var(--primary-blue-40);
+
+	--inputDatePickerDOWColor: var(--white);
+
+	--inputDatePickerHeaderBackground: var(--primary-blue-40);
+	--inputDatePickerHeaderColor: var(--white);
+
+	--inputDatePickerHoverBackground: var(--faintBackground);
+	--inputDatePickerHoverColor: var(--white);
+
+	--inputDatePickerIconColor: var(--white);
+
+	--inputDatePickerIconHoverBackground: var(--primary-green-20);
+	--inputDatePickerIconHoverColor: var(--primary-blue-60);
+
+	--inputDatePickerSelectedBackground: var(--primary-blue-40);
+	--inputDatePickerSelectedColor: var(--white);
+
+	--inputDropDownBackground: var(--primary-blue-40);
+	--inputDropDownColor: var(--white);
+	--inputDropDownFontSize: 20px;
+	--inputDropDownMaxHeight: 21em;
+
+	--inputDropDownHoverBackground: var(--primary-blue-20);
+	--inputDropDownHoverColor: var(--white);
+
+	--inputDropDownIconColor: var(--white);
+
+	--inputDropDownSelectedBackground: var(--primary-green-40);
+	--inputDropDownSelectedColor: var(--white);
+
+	--inputBorderHoverColor: var(--primary-blue-60);
+
+	--inputRadioColor: var(--primary-green-60);
+
+	--inputRadioHoverBackground: var(--primary-green-30);
+
+	--inputSliderBackground: var(--faintBackground);
+	--inputSliderColor: var(--white);
+
+	--inputRadioLabelBackground: var(--faintBackground);
+	--inputRadioLabelColor: var(--white);
+	--inputRadioLabelFontSize: 0.9rem;
+
+	--labelBackground: var(--faintBackground);
+	--labelColor: var(--white);
+	--labelFontSize: 16px;
+
+	--listBackground: var(--faintBackground);
+	--listBorderColor: var(--primary-blue-20);
+	--listBorderRadius: 10px;
+	--listBorderStyle: solid;
+	--listBorderWidth: 2px;
+	--listPadding: 0px;
+
+	--listCheckboxColor: var(--primary-green-60);
+	--listCheckboxPadding: 2px 6px;
+
+	--listContainerBackground: var(--secondary-charcoal-10);
+	--listContainerBorderRadius: 10px;
+
+	--listHeaderBackground: var(--primary-blue-20);
+	--listHeaderColor: var(--primary-blue-60);
+	--listHeaderFontSize: 14px;
+
+	--listHeaderBadgeBackground: var(--primary-blue-40);
+	--listHeaderBadgeColor: var(--white);
+	--listHeaderBadgeFontSize: 12px;
+
+	--listHeaderIconColor: var(--black-54);
+	--listHeaderIconHoverBackground: var(--primary-blue-60);
+	--listHeaderIconHoverColor: var(--white);
+
+	--listItemBackground: var(--faintBackground);
+	--listItemColor: var(--white);
+	--listItemFontSize: 13px;
+	--listItemPadding: 3px 16px;
+
+	--listItemAltBackground: var(--primary-blue-10);
+
+	--listItemHoverBackground: var(--primary-green-20);
+	--listItemHoverColor: var(--white);
+
+	--listItemSelectedBackground: var(--primary-blue-10);
+	--listItemSelectedColor: var(--white);
+
+	--equipmentManagerBackground: var(--faintBackground);
+	--materialManagerBackground: var(--faintBackground);
+
+	--popupMenuBackground: var(--faintBackground);
+	--popupMenuBorderColor: var(--primary-blue-40);
+	--popupMenuMaxHeight: 21em;
+	--popupMenuColor: var(--primary-blue-40);
+	--popupMenuFontSize: 14px;
+	--popupMenuHoverBackground: var(--primary-blue-60);
+	--popupMenuHoverColor: var(--white);
+	--popupMenuSelectedBackground: var(--primary-green-60);
+	--popupMenuSelectedColor: var(--white);
+
+	--radioGroupBackground: var(--faintBackground);
+	--radioGroupBorderColor: var(--primary-blue-40);
+
+	--radioGroupLabelBackground: var(--primary-green-60);
+	--radioGroupLabelFontSize: 1em;
+
+	--sectionBackground: var(--faintBackground);
+	--sectionBorderColor: var(--primary-blue-40);
+
+	--tableBackground: var(--faintBackground);
+	--tableBorderColor: var(--primary-blue-20);
+	--tableColor: var(--white);
+	--tableFontSize: 14px;
+
+	--tableColumnChooserBackground: var(--white);
+	--tableColumnChooserColor: var(--black);
+	--tableColumnChooserHoverBackground: var(--black-4);
+	--tableColumnChooserHoverColor: var(--black-87);
+	--tableColumnChooserFontSize: var(--buttonFontSize);
+	--tableColumnChooserCheckboxColor: var(--buttonColor);
+	--tableColumnChooserCheckboxHoverBackground: var(--primary-blue-4);
+
+	--tableGridLineColor: var(--white);
+	--tableGridLineStyle: solid;
+	--tableGridLineSize: 1px;
+
+	--tableCellPaddingHorizontal: 8px;
+	--tableCellPaddingVertical: 8px;
+
+	--tableSelectedBackground: var(--neutral-30);
+	--tableSelectedRowColor: var(--black-87);
+
+	--tableRowHeight: 30px;
+
+	--tableHeaderBackground: var(--primary-blue-20);
+	--tableHeaderColor: var(--white);
+	--tableHeaderFontSize: 14px;
+
+	--timelineBackground: var(--faintBackground);
+	--timelineColor: var(--white);
+	--timelineHeaderBackground: var(--primary-blue-30);
+	--timelineHeaderColor: var(--white);
+	--timelineBorderHoverColor: var(--primary-blue-40);
+	--timelineHeaderDateBackground: var(--primary-blue-30);
+	--timelineHeaderDateColor: var(--white);
+
+	--toolbarBackground: var(--primary-blue-40);
+	--toolbarColor: var(--white);
+	--toolbarFontSize: 16px;
+
+	--toolbarButtonColor: var(--primary-blue-10);
+
+	--toolbarButtonHoverBackground: var(--primary-blue-60);
+	--toolbarButtonHoverColor: var(--white);
+
+	--tooltipBackground: var(--black-87);
+	--tooltipColor: var(--white);
+	--tooltipFontSize: 10px;
+
+	--treeBackground: var(--faintBackground);
+	--treeColor: var(--white);
+	--treeFontSize: 1rem;
+
+	--treeArrowColor: var(--white);
+
+	--treeIconSize: 1.5rem;
+	--treeIconColorNodeClosed: var(--white);
+	--treeIconColorNodeOpen: var(--white);
+
+	--treeSelectedBackground: var(--secondary-yellow-20);
+	--treeSelectedBorderColor: var(--secondary-brown-30);
+	--treeSelectedColor: var(--white);
+}

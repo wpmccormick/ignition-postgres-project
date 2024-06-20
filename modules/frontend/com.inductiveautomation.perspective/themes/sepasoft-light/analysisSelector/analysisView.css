@@ -1,0 +1,72 @@
+.mes_analysisView__input {
+	background-color: var(--inputBackground);
+	color: var(--inputColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_analysisView__dropdown {
+	background-color: var(--inputDropDownBackground);
+	color: var(--inputDropDownColor);
+	font-size: var(--inputDropDownFontSize);
+}
+
+.mes_analysisView__textField {
+	color: var(--inputColor);
+}
+
+.mes_analysisView__main .MuiCheckbox-root {
+	color: var(--primary-green-30);
+}
+
+.mes_analysisView__main th,
+.mes_analysisView__main th svg,
+.mes_analysisView__main th svg:hover,
+.mes_analysisView__main th .MuiTableSortLabel-root:hover,
+.mes_analysisView__main .MuiTableSortLabel-icon {
+	color: var(--primary-blue-40);
+}
+
+.mes_analysisView__main tr:nth-child(even) {
+	background-color: var(--primary-blue-10);
+}
+.mes_analysisView__tables {
+	background-color: var(--tableBackground);
+	color: var(--tableColor);
+	border-bottom-color: var(--tableBorderColor);
+	box-shadow: none;
+}
+
+.mes_analysisView__tables .MuiToolbar-root > div:last-child button {
+	color: var(--primary-green-30);
+}
+
+.mes_analysisView__tables .MuiToolbar-root > div:last-child button:hover {
+	background-color: var(--primary-green-50);
+	color: var(--primary-green-70);
+}
+
+.mes_analysisView__tables td:not(:last-child) > svg {
+	color: var(--black-54);
+}
+
+.mes_analysisView__tables td:last-child span[title]:nth-child(odd) button {
+	color: var(--primary-blue-30);
+}
+
+.mes_analysisView__tables td:last-child span[title]:nth-child(odd) button:hover {
+	background-color: var(--primary-blue-50);
+	color: var(--primary-blue-70);
+}
+
+.mes_analysisView__tables td:last-child span[title]:nth-child(even) button {
+	color: var(--secondary-red-30);
+}
+
+.mes_analysisView__tables td:last-child span[title]:nth-child(even) button:hover {
+	background-color: var(--secondary-red-50);
+	color: var(--secondary-red-70);
+}
+
+.mes_analysisView__tables h6 {
+	color: var(--primary-blue-60);
+}

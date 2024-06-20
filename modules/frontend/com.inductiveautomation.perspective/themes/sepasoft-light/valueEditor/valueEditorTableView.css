@@ -1,0 +1,26 @@
+.mes_valueEditorTableView__divider {
+	background-color: var(--divider-background);
+}
+
+.mes_valueEditorTableView__menu {
+	background-color: var(--contextMenuBackground);
+	border-color: var(--contextMenuBorderColor);
+}
+
+.mes_valueEditorTableView__menuItem {
+	background-color: var(--contextMenuBackground);
+	color: var(--contextMenuColor);
+	font-size: var(--contextMenuFontSize);
+}
+
+.mes_valueEditorTableView__menuItem:hover {
+	background-color: var(--contextMenuHoverBackground);
+}
+
+.mes_valueEditorTableView__menuItem:hover .MuiListItemIcon-root {
+	color: var(--contextMenuHoverColor);
+}
+
+.mes_valueEditorTableView__menuItem:hover .MuiListItemText-primary {
+	color: var(--contextMenuHoverColor);
+}

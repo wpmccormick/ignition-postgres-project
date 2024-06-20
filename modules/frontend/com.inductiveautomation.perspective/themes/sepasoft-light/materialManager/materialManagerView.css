@@ -1,0 +1,8 @@
+.oee_materialManager__main {
+	background-color: var(--materialManagerBackground);
+}
+
+.oee_materialManager__menu {
+	background-color: var(--contextMenuBackground);
+	border-color: var(--contextMenuBorderColor);
+}

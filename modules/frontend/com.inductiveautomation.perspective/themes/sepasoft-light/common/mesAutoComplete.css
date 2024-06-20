@@ -1,0 +1,46 @@
+
+.mes_autoComplete__input {
+	cursor: pointer;
+	display: flex;
+	height: auto;
+	padding: 0;
+}
+
+.mes_autoComplete__noOptionsMessage {
+	padding: 8px 16px;
+}
+
+.mes_autoComplete__placeHolder {
+	bottom: 6;
+	font-size: 12px;
+	left: 2;
+	position: absolute;
+}
+
+.mes_autoComplete__value {
+	color: currentColor;
+	font-size: 14px;
+	position: relative;
+}
+
+.mes_autoComplete__valueContainer {
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.mes_autoComplete__valueContainer input {
+	position: relative;
+	top: 14;
+}
+
+.mes_autoComplete__menu {
+	margin-top: 8px;
+}
+
+.mes_autoComplete__menuItem {
+	font-size: 14px;
+	min-height: 20px;
+}

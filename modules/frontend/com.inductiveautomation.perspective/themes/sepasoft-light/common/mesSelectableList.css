@@ -1,0 +1,31 @@
+.mes_selectableList__root {
+	background-color: var(--listBackground);
+	border: var(--listBorderWidth) var(--listBorderStyle) var(--listBorderColor);
+	border-radius: var(--listBorderRadius);
+}
+
+.mes_selectableList__listItem {
+	background-color: var(--listItemBackground);
+	color: var(--listItemColor);
+	font-size: var(--listItemFontSize);
+}
+
+.mes_selectableList__listItem:hover {
+	background-color: var(--listItemHoverBackground);
+	color: var(--listItemHoverColor);
+}
+
+.mes_selectableList__listItemSelected {
+	background-color: var(--primary-green-30);
+}
+
+.mes_selectableList__listItemSelected:hover {
+	background-color: var(--primary-green-50);
+}
+
+/* .mes_selectableList__zebraStripe {
+} */
+
+.mes_selectableList__zebraStripe > div:nth-of-type(odd) {
+	background-color: var(--listItemAltBackground);
+}

@@ -52,7 +52,7 @@ services:
     volumes:
       - ./ignition-data/oee-backend:/workdir
       - ./backups/oee-backend.gwbk:/restore.gwbk
-      - ./modules/oee-backend:/modules
+      - ./modules/oee-backend:/workdir/modules
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false
@@ -77,7 +77,7 @@ services:
     volumes:
       - ./ignition-data/frontend:/workdir
       - ./backups/frontend.gwbk:/restore.gwbk
-      - ./modules/frontend:/modules
+      - ./modules/frontend:/workdir/modules
     environment:
       SYMLINK_GITIGNORE: false
       SYMLINK_LOGBACK: false

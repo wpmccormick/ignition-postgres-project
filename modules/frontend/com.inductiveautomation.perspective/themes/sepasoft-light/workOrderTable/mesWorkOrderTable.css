@@ -1,0 +1,19 @@
+[class*="mes_workOrderTable__main"] {
+}
+
+[class*="mes_workOrderTable__main"] .MuiCollapse-wrapper {
+}
+
+[class*="mes_workOrderTable__main"] .MuiCollapse-entered {
+}
+
+[class*="mes_workOrderTable__main"] .MuiCollapse-wrapperInner > :first-child {
+}
+
+[class*="mes_workOrderTable__main"] .MuiCollapse-wrapperInner thead {
+	background-color: var(--primary-light);
+}
+
+[class*="mes_workOrderTable__main"] .MuiList-root {
+	overflow: auto;
+}

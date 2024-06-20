@@ -1,0 +1,124 @@
+.mes_mesTable__root [class*="PageSizeSelector"],
+.mes_mesTable__root [class*="Pagination"],
+.mes_mesTable__paging,
+.mes_mesTable__table,
+.mes_mesTable__cell,
+.mes_mesTable__expandButton {
+	color: var(--tableColor);
+}
+
+.mes_mesTable__table .MuiCollapse-wrapperInner thead {
+	background-color: var(--tableHeaderBackground);
+}
+
+.mes_mesTable__table .MuiTableCell-root {
+	padding: var(--tableCellPaddingVertical) var(--tableCellPaddingHorizontal);
+}
+
+.mes_mesTable__tableBorderNoHorizontal {
+	border-bottom: none;
+}
+
+.mes_mesTable__tableBorderHorizontal {
+	border-bottom: var(--tableGridLineSize) var(--tableGridLineStyle) var(--tableGridLineColor);
+}
+
+.mes_mesTable__tableBorderVertical {
+	border-right: var(--tableGridLineSize) var(--tableGridLineStyle) var(--tableGridLineColor);
+}
+
+/*.mes_mesTable__table th.MuiTableCell-root {*/
+/*	background-color: var(--tableHeaderBackground);*/
+/*	color: var(--tableHeaderColor);*/
+/*	font-size: var(--tableHeaderFontSize);*/
+/*}*/
+
+.mes_mesTable__table td.MuiTableCell-root {
+	font-size: var(--tableFontSize);
+	line-height: var(--tableRowHeight);
+}
+
+.mes_mesTable__table td {
+	cursor: pointer;
+}
+
+.mes_mesTable__table td.selected {
+	color: var(--tableSelectedRowColor);
+}
+
+.mes_mesTable__table.selected {
+	color: var(--tableSelectedRowColor);
+}
+
+.mes_mesTable__header {
+	background-color: var(--tableHeaderBackground);
+	color: var(--tableHeaderColor);
+	font-size: var(--tableHeaderFontSize);
+}
+
+.mes_mesTable__container .MuiTableRow-root.Mui-selected, .mes_mesTable__container .MuiTableRow-root.Mui-selected:hover {
+	background-color: var(--tableSelectedBackground);
+}
+
+.mes_mesTable__container .MuiTableRow-root .MuiTableCell-root.MuiTableCell-paddingCheckbox > .MuiCheckbox-root:hover,
+.mes_mesTable__container .MuiTableRow-root .MuiTableCell-root.MuiTableCell-paddingCheckbox > .MuiCheckbox-root.Mui-checked:hover {
+	background-color: var(--checkboxHoverBackground);
+}
+
+.mes_mesTable__container .MuiTableRow-root .MuiTableCell-root.MuiTableCell-paddingCheckbox > .MuiCheckbox-root.Mui-checked,
+.mes_mesTable__container .MuiTableRow-root .MuiTableCell-root.MuiTableCell-paddingCheckbox > .MuiCheckbox-root.Mui-checked .MuiIconButton-label > svg {
+	color: var(--buttonColor)
+}
+
+/*.mes_mesTable__header th.MuiTableCell-root {*/
+/*	background-color: var(--tableHeaderBackground);*/
+/*	color: var(--tableHeaderColor);*/
+/*	font-size: var(--tableHeaderFontSize);*/
+/*}*/
+
+.mes_mesTable__divider {
+	background-color: transparent;
+}
+
+/*.mes_mesTable__title {
+	color: var(--toolbarColor);
+	font-size: var(--toolbarFontSize);
+	margin: 0px 4px;
+} */
+
+.mes_mesTable__toolbar {
+	background-color: var(--toolbarBackground);
+	color: var(--toolbarColor);
+}
+
+.mes_mesTable__toolbar button {
+	color: var(--toolbarButtonColor);
+}
+
+.mes_mesTable__toolbar button:hover {
+	background-color: var(--toolbarButtonHoverBackground);
+	color: var(--toolbarButtonHoverColor);
+}
+
+/* rules for Input underline. Theming should not use this, but leaving it here for future reference.
+
+.mes_mesTable__toolbar .MuiInputBase-root {
+	color: var(--toolbarButtonColor);
+}
+
+.mes_mesTable__toolbar .MuiInput-underline:before {
+	border-bottom-color: var(--toolbarButtonColor);
+}
+
+.mes_mesTable__toolbar .MuiInput-underline:after {
+	border-bottom-color: var(--toolbarButtonHoverBackground);
+}
+
+.mes_mesTable__toolbar .MuiInput-underline:hover {
+	border-bottom-color: var(--toolbarButtonHoverBackground);
+}
+
+.mes_mesTable__toolbar .MuiInput-underline:hover:not(.Mui-disabled):before {
+	border-bottom-color: var(--toolbarButtonHoverBackground);
+}
+*/

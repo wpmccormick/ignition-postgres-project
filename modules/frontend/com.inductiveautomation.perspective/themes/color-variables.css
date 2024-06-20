@@ -1,0 +1,83 @@
+:root {
+	--white: #FFFFFF;
+	--black: #000000;
+
+	--black-4: rgba(0, 0, 0, 0.04);
+	--black-12: rgba(0, 0, 0, 0.12);
+	--black-23: rgba(0, 0, 0, 0.23);
+	--black-35: rgba(0, 0, 0, 0.35);
+	--black-54: rgba(0, 0, 0, 0.54);
+	--black-65: rgba(0, 0, 0, 0.65);
+	--black-87: rgba(0, 0, 0, 0.87);
+
+	--darkGreen: #356C35;
+	--mediumGreen: #72B159;
+	--lightGreen: #BDDBB2;
+
+	/* Primary green */
+	--primary-green-10: #DBEBD5;
+	--primary-green-20: #B7D7AB;
+	--primary-green-30: #94C482;
+	--primary-green-40: #70B058;
+	--primary-green-50: #4C9C2E;
+	--primary-green-60: #3D7D25;
+	--primary-green-70: #2E5E1C;
+	--primary-green-80: #1E3E12;
+	--primary-green-90: #0F1F09;
+
+	/* Primary blue */
+	--primary-blue-4: #F7F9FC;
+	--primary-blue-10: #CCDBEA;
+	--primary-blue-20: #99B7D6;
+	--primary-blue-30: #6692C1;
+	--primary-blue-40: #336EAD;
+	--primary-blue-50: #004A98;
+	--primary-blue-60: #003B7A;
+	--primary-blue-70: #002C5B;
+	--primary-blue-80: #001E3D;
+	--primary-blue-90: #000F1E;
+
+	/* Secondary red */
+	--secondary-red-10: #FBD2D3;
+	--secondary-red-20: #F7A4A7;
+	--secondary-red-30: #F4777C;
+	--secondary-red-40: #F04950;
+	--secondary-red-50: #EC1C24;
+	--secondary-red-60: #BD161D;
+	--secondary-red-70: #8E1116;
+	--secondary-red-80: #5E0B0E;
+	--secondary-red-90: #2F0607;
+
+	/* Secondary charcoal */
+	--secondary-charcoal-10: #D5D4D4;
+	--secondary-charcoal-20: #ABAAA8;
+	--secondary-charcoal-30: #817F7D;
+	--secondary-charcoal-40: #575551;
+	--secondary-charcoal-50: #2D2A26;
+	--secondary-charcoal-60: #24221E;
+	--secondary-charcoal-70: #1B1917;
+	--secondary-charcoal-80: #12110F;
+	--secondary-charcoal-90: #090808;
+
+	/* Secondary yellow */
+	--secondary-yellow-10: #FFF5CC;
+	--secondary-yellow-20: #FFEB99;
+	--secondary-yellow-30: #FFE166;
+	--secondary-yellow-40: #FFD733;
+	--secondary-yellow-50: #FFCD00;
+	--secondary-yellow-60: #CCA400;
+	--secondary-yellow-70: #997B00;
+	--secondary-yellow-80: #665200;
+	--secondary-yellow-90: #332900;
+
+	/* Secondary brown */
+	--secondary-brown-10: #F6E6D6;
+	--secondary-brown-20: #EECDAD;
+	--secondary-brown-30: #E5B484;
+	--secondary-brown-40: #DD9B5B;
+	--secondary-brown-50: #D48232;
+	--secondary-brown-60: #AA6828;
+	--secondary-brown-70: #7F4E1E;
+	--secondary-brown-80: #553414;
+	--secondary-brown-90: #2A1A0A;
+}

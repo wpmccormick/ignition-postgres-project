@@ -1,0 +1,12 @@
+.mes_mesHeader__title {
+	color: var(--toolbarColor);
+	font-size: var(--toolbarFontSize);
+}
+
+.mes_mesHeader__toolbar {
+	background-color: var(--toolbarBackground);
+}
+
+.mes_mesHeader__toolbar div input {
+	color: var(--white);
+}

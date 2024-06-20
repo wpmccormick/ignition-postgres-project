@@ -1,0 +1,17 @@
+.mes_drawer__drawerPaper {
+	background-color: var(--drawerBackground);
+}
+
+.mes_drawer__drawerToolbar {
+	background-color: var(--toolbarBackground);
+	color: var(--toolbarColor);
+	font-size: var(--toolbarFontSize);
+}
+
+.mes_drawer__drawerContent {
+	background-color: var(--drawerBackground);
+}
+
+.mes_drawer__drawerHeader {
+	background-color: var(--drawerBackground);
+}

@@ -1,0 +1,8 @@
+.mes_settingsPanel__background {
+	background-color: var(--listItemBackground);
+	color: var(--listItemColor);
+}
+
+.mes_settingsPanel__focus {
+	color: var(--errorColor);
+}

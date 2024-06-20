@@ -1,0 +1,28 @@
+.mes_scrollList__scrollListRoot {
+	background-color: var(--listBackground);
+}
+
+.mes_scrollList__item {
+	color: var(--listItemColor);
+	font-size: var(--listItemFontSize);
+}
+
+.mes_scrollList__itemsFooter {
+	border-bottom-left-radius: 0;
+}
+
+.mes_scrollList__wrapper {
+	background-color: var(--listBackground);
+	border-bottom: var(--listBorderWidth) var(--listBorderStyle) var(--listBorderColor);
+	border-bottom-left-radius: var(--listBorderRadius);
+	border-left: var(--listBorderWidth) var(--listBorderStyle) var(--listBorderColor);
+	border-right: var(--listBorderWidth) var(--listBorderStyle) var(--listBorderColor);
+}
+
+.mes_scrollList__zebraStripe {
+	background-color: var(--listItemBackground);
+}
+
+.mes_scrollList__zebraStripe > li:nth-of-type(even) {
+	background-color: var(--listItemAltBackground);
+}

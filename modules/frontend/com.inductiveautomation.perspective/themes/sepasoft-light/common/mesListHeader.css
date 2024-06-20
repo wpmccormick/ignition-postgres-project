@@ -1,0 +1,17 @@
+.mes_listHeader__badge {
+	background-color: var(--listHeaderBadgeBackground);
+	color: var(--listHeaderBadgeColor);
+	font-size: var(--listHeaderBadgeFontSize);
+}
+
+.mes_listHeader__header {
+	background-color: var(--listHeaderBackground);
+	border-top-left-radius: var(--listBorderRadius);
+	border-top-right-radius: var(--listBorderRadius);
+}
+
+.mes_listHeader__title {
+	color: var(--listHeaderColor);
+	font-size: var(--listHeaderFontSize);
+	font-weight: bold;
+}

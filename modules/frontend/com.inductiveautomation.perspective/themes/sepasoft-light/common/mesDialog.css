@@ -1,0 +1,60 @@
+
+.mes_dialog__close {
+	color: var(--dialogTitleButtonColor);
+}
+
+.mes_dialog__close:hover {
+	background-color: var(--dialogTitleButtonHoverBackground);
+	color: var(--dialogTitleButtonHoverColor);
+}
+
+.mes_dialog__content {
+	background-color: var(--dialogBackground);
+}
+
+.mes_dialog__contentText {
+	color: var(--dialogColor);
+	font-size: var(--dialogFontSize);
+}
+
+.mes_dialog__divider {
+	background-color: var(--dialogDividerBackground);
+}
+
+.mes_dialog__footer {
+	background-color: var(--dialogBackground);
+}
+
+.mes_dialog__iconError {
+	color: var(--secondary-red-50);
+}
+
+.mes_dialog__iconInfo {
+	color: var(--primary-blue-50);
+}
+
+.mes_dialog__iconQuestion {
+	color: var(--primary-blue-50);
+}
+
+.mes_dialog__iconSuccess {
+	color: var(--primary-green-50);
+}
+
+.mes_dialog__iconWarning {
+	color: var(--secondary-brown-50);
+}
+
+.mes_dialog__title {
+	background-color: var(--dialogTitleBackground);
+	color: var(--dialogTitleColor);
+	font-size: var(--dialogTitleFontSize);
+}
+
+.mes_dialog__draggable {
+	cursor: move;
+}
+
+.mes_dialog__title > h6 {
+	color: var(--white);
+}

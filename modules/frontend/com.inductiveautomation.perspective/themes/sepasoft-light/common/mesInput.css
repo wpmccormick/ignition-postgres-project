@@ -1,0 +1,26 @@
+.mes_mesInput__formControl {
+	background-color: var(--inputBackground);
+	color: var(--inputColor);
+}
+
+.mes_mesInput__formControl input {
+	color: var(--inputColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_mesInput__label {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_mesInput__labelShrink {
+	font-size: inherit;
+}
+
+/* .mes_mesInput__root {
+	
+} */
+
+.mes_mesInput__underline:not(.Mui-disabled):after .mes_mesInput__underline:hover:not(.Mui-disabled):before {
+	border-bottom: var(--inputBorderWidth) var(--inputBorderStyle) var(--inputBorderColor);
+}

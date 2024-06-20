@@ -1,0 +1,25 @@
+.mes_window__main {
+	background-color: var(--dialogBackground);
+	color: var(--dialogColor);
+}
+
+.mes_window__toolbar {
+	background-color: var(--toolbarBackground);
+	color: var(--toolbarColor);
+}
+/* 
+.MuiPaper-root.MuiAppBar-root + .MuiPaper-root.MuiPaper-rounded.mes_window__main {
+	height: calc(100% - 56px);
+}
+
+@media (min-width:0px) and (orientation: landscape) {
+	.MuiPaper-root.MuiAppBar-root + .MuiPaper-root.MuiPaper-rounded.mes_window__main {
+		height: calc(100% - 48px);
+	}
+}
+
+@media (min-width:600px) {
+	.MuiPaper-root.MuiAppBar-root + .MuiPaper-root.MuiPaper-rounded.mes_window__main {
+		height: calc(100% - 64px);
+	}
+} */

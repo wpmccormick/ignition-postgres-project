@@ -1,0 +1,105 @@
+.mes_workOrderTableEditView__checkbox {
+	color: var(--inputCheckboxColor);
+}
+
+.mes_workOrderTableEditView__checkbox:hover {
+	background-color: var(--inputCheckboxHoverBackground);
+}
+
+.mes_workOrderTableEditView__checkboxLabel .MuiFormControlLabel-label {
+	background-color: var(--inputCheckboxLabelBackground);
+	color: var(--inputCheckboxLabelColor);
+	font-size: var(--inputCheckboxLabelFontSize);
+}
+
+.mes_workOrderTableEditView__datetime button {
+	color: var(--inputDatePickerIconColor);
+}
+
+.mes_workOrderTableEditView__datetime button:hover {
+	background-color: var(--inputDatePickerIconHoverBackground);
+}
+
+.mes_workOrderTableEditView__datetime button:hover svg path {
+	fill: var(--inputDatePickerIconHoverColor);
+}
+
+.mes_workOrderTableEditView__datetime label {
+	color: var(--inputDatePickerColor);
+}
+
+.mes_workOrderTableEditView__datetime svg path {
+	color: var(--inputDatePickerIconColor);
+}
+
+.mes_workOrderTableEditView__formControl {
+	background-color: var(--background);
+}
+
+.mes_workOrderTableEditView__formControl input {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_workOrderTableEditView__inputs {
+	background-color: var(--sectionBackground);
+	border-color: var(--sectionBorderColor);
+}
+
+.mes_workOrderTableEditView__label {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_workOrderTableEditView__labelShrink {
+	font-size: inherit;
+}
+
+.mes_workOrderTableEditView__main {
+	background-color: var(--dialogBackground);
+}
+
+.mes_workOrderTableEditView__main .rc-tree-node-selected {
+	background-color: var(--treeSelectedBackground);
+	border-color: var(--treeSelectedBorderColor);
+	color: var(--treeSelectedColor);
+}
+
+.mes_workOrderTableEditView__main .nodeIcon svg {
+	font-size: var(--treeIconSize);
+}
+
+.mes_workOrderTableEditView__main .switcherIcon svg {
+	font-size: var(--treeIconSize);
+	color: var(--treeArrowColor);
+}
+
+.mes_workOrderTableEditView__main .nodeClosed svg path {
+	fill: var(--treeIconColorNodeClosed);
+}
+
+.mes_workOrderTableEditView__main .nodeOpen svg path {
+	fill: var(--treeIconColorNodeOpen);
+}
+
+.mes_workOrderTableEditView__root {
+	background-color: var(--dialogBackground);
+}
+
+.mes_workOrderTableEditView__title {
+	color: var(--toolbarColor);
+}
+
+.mes_workOrderTableEditView__toolbar {
+	background-color: var(--toolbarBackground);
+	color: var(--toolbarColor);
+	font-size: var(--toolbarFontSize);
+}
+
+.mes_workOrderTableEditView__underline:not(.Mui-disabled):after {
+	border-bottom: var(--borderBottomWidth) var(--borderBottomStyle) var(--borderBottomColor);
+}
+
+.mes_workOrderTableEditView__underline:hover:not(.Mui-disabled):before {
+	border-bottom: var(--borderBottomWidth) var(--borderBottomStyle) var(--borderBottomColor);
+}

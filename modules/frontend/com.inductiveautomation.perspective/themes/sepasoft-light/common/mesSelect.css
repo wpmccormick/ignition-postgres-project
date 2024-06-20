@@ -1,0 +1,61 @@
+.mes_selectComponent__container {
+	background-color: var(--listBackground);
+	color: var(--listItemColor);
+}
+
+.mes_selectComponent__container .mes_selectComponent__label {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_selectComponent__container .Mui-disabled.mes_selectComponent__label,
+.mes_selectComponent__container .Mui-disabled .mes_selectComponent__label {
+	color: rgba(0, 0, 0, 0.38);
+}
+
+.mes_selectComponent__container .mes_selectComponent__labelShrink {
+	font-size: inherit;
+}
+
+.mes_selectComponent__popoverRoot .mes_selectComponent__menu {
+	background-color: var(--inputDropDownBackground);
+	max-height: var(--inputDropDownMaxHeight);
+}
+
+.mes_selectComponent__popoverRoot .mes_selectComponent__menuItem {
+	background-color: var(--inputDropDownBackground);
+	color: var(--inputDropDownColor);
+	font-size: var(--inputDropDownFontSize);
+}
+
+.mes_selectComponent__popoverRoot .mes_selectComponent__menuItemSelected {
+	background-color: var(--inputDropDownSelectedBackground);
+	color: var(--inputDropDownSelectedColor);
+}
+
+.mes_selectComponent__popoverRoot .mes_selectComponent__menuItem:hover:not(.mes_selectComponent__menuItemSelected) {
+	background-color: var(--inputDropDownHoverBackground);
+	color: var(--inputDropDownHoverColor);
+}
+
+.mes_selectComponent__container .mes_selectComponent__select {
+	/*background-color: var(--inputBackground);*/
+	color: var(--inputColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_selectComponent__container .mes_selectComponent__select svg {
+	color: var(--inputDropDownIconColor);
+}
+
+.mes_selectComponent__underline {
+	background-color: inherit;
+}
+
+.mes_selectComponent__underline:not(.Mui-disabled):after {
+	border-bottom: var(--inputBorderWidth) var(--inputBorderStyle) var(--inputBorderColor);
+}
+
+.mes_selectComponent__underline:hover:not(.Mui-disabled):before {
+	border-bottom: var(--inputBorderWidth) var(--inputBorderStyle) var(--inputBorderHoverColor);
+}

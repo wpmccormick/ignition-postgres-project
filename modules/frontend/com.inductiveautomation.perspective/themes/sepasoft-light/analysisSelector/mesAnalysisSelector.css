@@ -1,0 +1,166 @@
+.mes_analysisSelector__orderByView,
+.mes_analysisSelector__groupByView {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__filter {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__top {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__topLeft {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__topRight {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__container {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__formControl {
+	background-color: var(--inputBackground);
+	border: var(--inputBorderWidth) var(--inputBorderStyle) var(--inputBorderColor);
+}
+
+.mes_analysisSelector__formControl input {
+	color: var(--inputColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_analysisSelector__inputs {
+	background-color: var(--listBackground);
+}
+
+.mes_analysisSelector__label {
+	color: var(--inputLabelColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_analysisSelector__labelShrink {
+	font-size: inherit;
+}
+
+.mes_analysisSelector__menu {
+	background-color: var(--inputDropDownBackground);
+}
+
+/*.mes_analysisSelector__menuItem {
+	background-color: var(--inputDropDownBackground);
+	color: var(--inputDropDownColor);
+	font-size: var(--inputDropDownFontSize);
+}
+
+.mes_analysisSelector__menuItem .mes_analysisSelector__menuItem:hover:not(.mes_analysisSelector__menuItemSelected) {
+	background-color: var(--inputDropDownHoverBackground);
+	color: var(--inputDropDownHoverColor);
+}
+
+.mes_analysisSelector__menuItem .mes_analysisSelector__menuItemSelected {
+	background-color: var(--inputDropDownSelectedBackground);
+	color: var(--inputDropDownSelectedColor);
+}
+
+.mes_analysisSelector__menuItem .mes_analysisSelector__menuItemSelected:focus {
+	background-color: var(--inputDropDownSelectedBackground);
+	color: var(--inputDropDownSelectedColor);
+}
+
+.mes_analysisSelector__menuItem .mes_analysisSelector__menuItemSelected:hover {
+	background-color: var(--inputDropDownSelectedBackground);
+	color: var(--inputDropDownSelectedColor);
+}
+
+.mes_analysisSelector__menuItemSelected {
+} */
+
+.mes_analysisSelector__miniIcon {
+	font-size: 1.25rem;
+	transition: none;
+}
+
+.mes_analysisSelector__miniToolbar {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__select {
+	background-color: var(--inputBackground);
+	color: var(--inputColor);
+	font-size: var(--inputFontSize);
+}
+
+.mes_analysisSelector__select svg {
+	color: var(--inputDropDownIconColor);
+}
+
+.mes_analysisSelector__values {
+	background-color: var(--inputBackground);
+}
+
+.mes_analysisSelector__datetime button {
+	color: var(--inputDatePickerIconColor);
+}
+
+.mes_analysisSelector__datetime button:hover {
+	color: var(--inputDatePickerIconHoverBackground);
+}
+
+.mes_analysisSelector__datetime button:hover svg path {
+	fill: var(--inputDatePickerIconHoverColor);
+}
+
+.mes_analysisSelector__datetime label {
+	color: var(--inputLabelColor);
+}
+
+.mes_analysisSelector__datetime svg path {
+	color: var(--inputDatePickerIconColor);
+}
+
+.mes_analysisSelector__divider {
+	background-color: var(--dividerBackground);
+}
+
+.mes_analysisSelector__middle {
+	background-color: var(--drawerBackground);
+}
+
+/* .mes_analysisSelector__middle fieldset {
+}
+
+.mes_analysisSelector__middle legend {
+} */
+
+.mes_analysisSelector__radioGroup {
+	background-color: var(--radioGroupBackground);
+	border-color: var(--radioGroupBorderColor);
+}
+
+.mes_analysisSelector__radio {
+	color: var(--inputRadioColor);
+}
+
+.mes_analysisSelector__radio:hover {
+	background-color: var(--inputRadioHoverBackground);
+}
+
+.mes_analysisSelector__buttons {
+	background-color: var(--drawerBackground);
+}
+
+.mes_analysisSelector__bottom {
+	background-color: var(--drawerBackground);
+}
+
+/* .mes_analysisSelector__expression {
+	background-color: var(--inputBackground);
+	border: var(--inputBorderWidth) var(--inputBorderStyle) var(--inputBorderColor);
+	border-radius: 4px;
+	color: var(--inputColor);
+	font-size: var(--inputFontSize);
+} */
