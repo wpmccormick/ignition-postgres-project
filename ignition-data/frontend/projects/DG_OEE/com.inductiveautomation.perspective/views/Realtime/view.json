@@ -17,10 +17,10 @@
               "includeMESLineObjects": true,
               "selectedMESObject": {
                 "childCount": -1,
-                "equipmentPath": "Design Group\\Sacramento\\Information Solutions\\Line 2",
+                "equipmentPath": "Design Group\\Sacramento\\Information Solutions\\Line 1",
                 "mesObjectType": "Line",
-                "mesObjectUUID": "aaacc7c0-3d5c-46aa-a185-5d9178523f2c",
-                "name": "Line 2"
+                "mesObjectUUID": "73cc8734-1279-408f-ae6c-ee0d0ad10293",
+                "name": "Line 1"
               }
             },
             "type": "mes.production.mesObjectSelector"
@@ -44,9 +44,15 @@
             },
             "props": {
               "selectedMaterial": {
-                "materialLink": {},
-                "workOrderName": "",
-                "workOrderUUID": ""
+                "materialLink": {
+                  "childCount": 0,
+                  "disabled": false,
+                  "mesObjectType": "MaterialDef",
+                  "mesObjectUUID": "cda109b7-3ce6-4bfa-aec5-41dcfc67293d",
+                  "name": "Z"
+                },
+                "workOrderName": "WOZ1",
+                "workOrderUUID": "66620c14-618d-4120-b459-ef96758f5d29"
               },
               "selectionMode": "Work Order"
             },
@@ -66,6 +72,12 @@
                   "config": {
                     "path": "../oeeRunDirector.props.selectedMaterial.workOrderName"
                   },
+                  "transforms": [
+                    {
+                      "code": "\tif value is None:\n\t\treturn \u0027Select a Work Order\u0027\n\telse:\n\t\treturn value\n\t\t",
+                      "type": "script"
+                    }
+                  ],
                   "type": "property"
                 }
               }
@@ -147,7 +159,7 @@
             "$": [
               "ds",
               192,
-              1719001406230
+              1719007063735
             ],
             "$columns": [
               {

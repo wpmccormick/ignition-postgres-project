@@ -84,7 +84,16 @@
       "name": "root"
     },
     "props": {
-      "direction": "column"
+      "direction": "column",
+      "style": {
+        "backgroundColor": "#CBE1FF",
+        "borderBottomLeftRadius": 10,
+        "borderBottomRightRadius": 10,
+        "borderColor": "#000000",
+        "borderStyle": "solid",
+        "borderTopLeftRadius": 10,
+        "borderTopRightRadius": 10
+      }
     },
     "type": "ia.container.flex"
   }
