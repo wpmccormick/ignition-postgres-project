@@ -16,7 +16,11 @@
             "props": {
               "includeMESLineObjects": true,
               "selectedMESObject": {
-                "childCount": -1
+                "childCount": -1,
+                "equipmentPath": "Design Group\\Sacramento\\Information Solutions\\Line 2",
+                "mesObjectType": "Line",
+                "mesObjectUUID": "aaacc7c0-3d5c-46aa-a185-5d9178523f2c",
+                "name": "Line 2"
               }
             },
             "type": "mes.production.mesObjectSelector"
@@ -40,15 +44,9 @@
             },
             "props": {
               "selectedMaterial": {
-                "materialLink": {
-                  "childCount": 0,
-                  "disabled": false,
-                  "mesObjectType": "MaterialDef",
-                  "mesObjectUUID": "ec135d0e-9e01-42e0-8e56-ed9f13412f9b",
-                  "name": "X"
-                },
-                "workOrderName": "WOX1",
-                "workOrderUUID": "61fa794a-3029-47b1-92b1-dbc84487fbf0"
+                "materialLink": {},
+                "workOrderName": "",
+                "workOrderUUID": ""
               },
               "selectionMode": "Work Order"
             },
@@ -96,10 +94,23 @@
               "name": "FlexRepeater"
             },
             "position": {
-              "basis": "320px",
+              "basis": "200px",
               "grow": 1
             },
+            "propConfig": {
+              "props.instances": {
+                "binding": {
+                  "config": {
+                    "path": "/root.custom.LineList"
+                  },
+                  "type": "property"
+                }
+              }
+            },
             "props": {
+              "alignContent": "center",
+              "alignItems": "center",
+              "justify": "space-evenly",
               "path": "Cells"
             },
             "type": "ia.display.flex-repeater"
@@ -109,22 +120,145 @@
           "name": "Cells"
         },
         "position": {
-          "basis": "200px"
+          "basis": "150px"
         },
         "type": "ia.container.flex"
       },
       {
         "meta": {
-          "name": "Downtime"
+          "name": "oeeDowntimeTable"
         },
         "position": {
-          "basis": "200px",
+          "basis": "300px",
           "grow": 1
         },
-        "props": {
-          "direction": "column"
+        "propConfig": {
+          "props.equipmentPath": {
+            "binding": {
+              "config": {
+                "path": "../FlexContainer/mesObjectSelector.props.selectedMESObject.equipmentPath"
+              },
+              "type": "property"
+            }
+          }
         },
-        "type": "ia.container.flex"
+        "props": {
+          "data": {
+            "$": [
+              "ds",
+              192,
+              1718984585148
+            ],
+            "$columns": [
+              {
+                "data": [],
+                "name": "begin",
+                "type": "Date"
+              },
+              {
+                "data": [],
+                "name": "end",
+                "type": "Date"
+              },
+              {
+                "data": [],
+                "name": "equipmentPath",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "originalEquipmentPath",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "equipmentSubpath",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "equipmentName",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "reason",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "code",
+                "type": "Integer"
+              },
+              {
+                "data": [],
+                "name": "duration",
+                "type": "Double"
+              },
+              {
+                "data": [],
+                "name": "isShortStop",
+                "type": "Boolean"
+              },
+              {
+                "data": [],
+                "name": "note",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "stateTimeStamp",
+                "type": "Date"
+              },
+              {
+                "data": [],
+                "name": "endStateTimeStamp",
+                "type": "Date"
+              },
+              {
+                "data": [],
+                "name": "split",
+                "type": "Boolean"
+              },
+              {
+                "data": [],
+                "name": "canRevertSplit",
+                "type": "Boolean"
+              },
+              {
+                "data": [],
+                "name": "occurrenceCount",
+                "type": "Integer"
+              },
+              {
+                "data": [],
+                "name": "sequenceNo",
+                "type": "Integer"
+              },
+              {
+                "data": [],
+                "name": "overrideType",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "overrideScope",
+                "type": "String"
+              },
+              {
+                "data": [],
+                "name": "eventOverridden",
+                "type": "Boolean"
+              },
+              {
+                "data": [],
+                "name": "originalCode",
+                "type": "Integer"
+              }
+            ]
+          }
+        },
+        "type": "mes.oee.downtimeTable"
       }
     ],
     "meta": {
@@ -134,11 +268,19 @@
       "custom.LineList": {
         "binding": {
           "config": {
-            "expression": "runScript(\"MES.get_line_list\")\r\n"
+            "expression": "runScript(\"MES.get_cell_states\",1000,{this.custom.SelectedLine})\r\n\r\n"
           },
           "type": "expr"
         },
         "persistent": false
+      },
+      "custom.SelectedLine": {
+        "binding": {
+          "config": {
+            "path": "./FlexContainer/mesObjectSelector.props.selectedMESObject.name"
+          },
+          "type": "property"
+        }
       }
     },
     "props": {

@@ -1,23 +1,23 @@
 {
-  "custom": {
-    "key": null
+  "custom": {},
+  "params": {
+    "cell_name": "name",
+    "cell_state": "state"
   },
-  "params": {},
   "propConfig": {
-    "custom.key": {
-      "binding": {
-        "config": {
-          "queryPath": ""
-        },
-        "type": "query"
-      },
+    "params.cell_name": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.cell_state": {
+      "paramDirection": "input",
       "persistent": true
     }
   },
   "props": {
     "defaultSize": {
-      "height": 192,
-      "width": 171
+      "height": 69,
+      "width": 117
     }
   },
   "root": {
@@ -29,8 +29,20 @@
         "position": {
           "basis": "32px"
         },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.cell_name"
+              },
+              "type": "property"
+            }
+          }
+        },
         "props": {
-          "text": "Label"
+          "textStyle": {
+            "textAlign": "center"
+          }
         },
         "type": "ia.display.label"
       },
@@ -39,7 +51,7 @@
           "name": "Spacer"
         },
         "position": {
-          "basis": "65px"
+          "basis": "9px"
         },
         "type": "ia.container.flex"
       },
@@ -50,19 +62,22 @@
         "position": {
           "basis": "32px"
         },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.cell_state"
+              },
+              "type": "property"
+            }
+          }
+        },
         "props": {
-          "text": "Label"
+          "textStyle": {
+            "textAlign": "center"
+          }
         },
         "type": "ia.display.label"
-      },
-      {
-        "meta": {
-          "name": "Spacer_0"
-        },
-        "position": {
-          "basis": "65px"
-        },
-        "type": "ia.container.flex"
       }
     ],
     "meta": {
