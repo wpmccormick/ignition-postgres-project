@@ -16,12 +16,7 @@
             "props": {
               "includeMESLineObjects": true,
               "selectedMESObject": {
-                "childCount": -1,
-                "disabled": false,
-                "equipmentPath": "",
-                "mesObjectType": "",
-                "mesObjectUUID": "",
-                "name": ""
+                "childCount": -1
               }
             },
             "type": "mes.production.mesObjectSelector"
