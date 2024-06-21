@@ -1,3 +1,4 @@
+# pylint: disable=consider-using-f-string
 """
 MES Helper Functions
 """
@@ -14,7 +15,8 @@ def get_line_list():
 def get_cell_states(line):
 	obj_filter = system.mes.object.filter.createFilter()
 	obj_filter.setMESObjectTypeName('LineCell')
-	line_path = fr'Design Group\Sacramento\Information Solutions\{line}'
+	line_path = r'Design Group\\Sacramento\\Information Solutions\\%s' % line
+
 	obj_filter.setPrimaryMESObjectPath(line_path)
 	
 	objs = system.mes.searchMESObjects(obj_filter)
