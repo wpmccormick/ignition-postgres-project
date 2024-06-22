@@ -16,11 +16,7 @@
             "props": {
               "includeMESLineObjects": true,
               "selectedMESObject": {
-                "childCount": -1,
-                "equipmentPath": "Design Group\\Sacramento\\Information Solutions\\Line 1",
-                "mesObjectType": "Line",
-                "mesObjectUUID": "73cc8734-1279-408f-ae6c-ee0d0ad10293",
-                "name": "Line 1"
+                "childCount": -1
               }
             },
             "type": "mes.production.mesObjectSelector"
@@ -48,11 +44,11 @@
                   "childCount": 0,
                   "disabled": false,
                   "mesObjectType": "MaterialDef",
-                  "mesObjectUUID": "cda109b7-3ce6-4bfa-aec5-41dcfc67293d",
-                  "name": "Z"
+                  "mesObjectUUID": "ec135d0e-9e01-42e0-8e56-ed9f13412f9b",
+                  "name": "X"
                 },
-                "workOrderName": "WOZ1",
-                "workOrderUUID": "66620c14-618d-4120-b459-ef96758f5d29"
+                "workOrderName": "WOX1",
+                "workOrderUUID": "61fa794a-3029-47b1-92b1-dbc84487fbf0"
               },
               "selectionMode": "Work Order"
             },
@@ -159,115 +155,9 @@
             "$": [
               "ds",
               192,
-              1719007063735
+              1719063305433
             ],
-            "$columns": [
-              {
-                "data": [],
-                "name": "begin",
-                "type": "Date"
-              },
-              {
-                "data": [],
-                "name": "end",
-                "type": "Date"
-              },
-              {
-                "data": [],
-                "name": "equipmentPath",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "originalEquipmentPath",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "equipmentSubpath",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "equipmentName",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "reason",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "code",
-                "type": "Integer"
-              },
-              {
-                "data": [],
-                "name": "duration",
-                "type": "Double"
-              },
-              {
-                "data": [],
-                "name": "isShortStop",
-                "type": "Boolean"
-              },
-              {
-                "data": [],
-                "name": "note",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "stateTimeStamp",
-                "type": "Date"
-              },
-              {
-                "data": [],
-                "name": "endStateTimeStamp",
-                "type": "Date"
-              },
-              {
-                "data": [],
-                "name": "split",
-                "type": "Boolean"
-              },
-              {
-                "data": [],
-                "name": "canRevertSplit",
-                "type": "Boolean"
-              },
-              {
-                "data": [],
-                "name": "occurrenceCount",
-                "type": "Integer"
-              },
-              {
-                "data": [],
-                "name": "sequenceNo",
-                "type": "Integer"
-              },
-              {
-                "data": [],
-                "name": "overrideType",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "overrideScope",
-                "type": "String"
-              },
-              {
-                "data": [],
-                "name": "eventOverridden",
-                "type": "Boolean"
-              },
-              {
-                "data": [],
-                "name": "originalCode",
-                "type": "Integer"
-              }
-            ]
+            "$columns": []
           }
         },
         "type": "mes.oee.downtimeTable"
